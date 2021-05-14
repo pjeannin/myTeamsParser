@@ -47,7 +47,7 @@ user_infos_t **load_users()
     users_list_head->data = NULL;
     users_list_head->next = NULL;
     while (getline(&line, &size, file) != -1) {
-        linked_list_add_elem()
+        linked_list_add_elem(set_user_infos(split_string(line)));
     }
     return (user_infos);
 }
