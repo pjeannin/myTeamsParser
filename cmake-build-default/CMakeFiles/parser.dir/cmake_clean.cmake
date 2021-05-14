@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/parser.dir/load_clients.c.o"
-  "CMakeFiles/parser.dir/main.c.o"
-  "CMakeFiles/parser.dir/split_string.c.o"
+  "CMakeFiles/parser.dir/src/linked_list.c.o"
+  "CMakeFiles/parser.dir/src/loader/load_users.c.o"
+  "CMakeFiles/parser.dir/src/loader/split_string.c.o"
+  "CMakeFiles/parser.dir/src/main.c.o"
   "parser"
   "parser.pdb"
 )

@@ -80,16 +80,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/load_clients.c">
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/includes/linked_list.h">
 			<Option target="parser"/>
 		</Unit>
-		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/main.c">
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/includes/user.h">
 			<Option target="parser"/>
 		</Unit>
-		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/split_string.c">
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/linked_list.c">
 			<Option target="parser"/>
 		</Unit>
-		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/user.h">
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_users.c">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/split_string.c">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/main.c">
 			<Option target="parser"/>
 		</Unit>
 		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/CMakeLists.txt">

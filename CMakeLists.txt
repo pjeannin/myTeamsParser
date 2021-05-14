@@ -4,4 +4,4 @@ project(Parser)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(parser
-        main.c user.h load_users.c split_string.c linked_list.h linked_list.c)
+        src/main.c includes/user.h src/loader/load_users.c src/loader/split_string.c includes/linked_list.h src/linked_list.c)

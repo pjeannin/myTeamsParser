@@ -142,86 +142,113 @@ parser/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/build
 .PHONY : parser/fast
 
-load_clients.o: load_clients.c.o
+src/linked_list.o: src/linked_list.c.o
 
-.PHONY : load_clients.o
-
-# target to build an object file
-load_clients.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/load_clients.c.o
-.PHONY : load_clients.c.o
-
-load_clients.i: load_clients.c.i
-
-.PHONY : load_clients.i
-
-# target to preprocess a source file
-load_clients.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/load_clients.c.i
-.PHONY : load_clients.c.i
-
-load_clients.s: load_clients.c.s
-
-.PHONY : load_clients.s
-
-# target to generate assembly for a file
-load_clients.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/load_clients.c.s
-.PHONY : load_clients.c.s
-
-main.o: main.c.o
-
-.PHONY : main.o
+.PHONY : src/linked_list.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/main.c.o
-.PHONY : main.c.o
+src/linked_list.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/linked_list.c.o
+.PHONY : src/linked_list.c.o
 
-main.i: main.c.i
+src/linked_list.i: src/linked_list.c.i
 
-.PHONY : main.i
+.PHONY : src/linked_list.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/main.c.i
-.PHONY : main.c.i
+src/linked_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/linked_list.c.i
+.PHONY : src/linked_list.c.i
 
-main.s: main.c.s
+src/linked_list.s: src/linked_list.c.s
 
-.PHONY : main.s
+.PHONY : src/linked_list.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/main.c.s
-.PHONY : main.c.s
+src/linked_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/linked_list.c.s
+.PHONY : src/linked_list.c.s
 
-split_string.o: split_string.c.o
+src/loader/load_users.o: src/loader/load_users.c.o
 
-.PHONY : split_string.o
+.PHONY : src/loader/load_users.o
 
 # target to build an object file
-split_string.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/split_string.c.o
-.PHONY : split_string.c.o
+src/loader/load_users.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/loader/load_users.c.o
+.PHONY : src/loader/load_users.c.o
 
-split_string.i: split_string.c.i
+src/loader/load_users.i: src/loader/load_users.c.i
 
-.PHONY : split_string.i
+.PHONY : src/loader/load_users.i
 
 # target to preprocess a source file
-split_string.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/split_string.c.i
-.PHONY : split_string.c.i
+src/loader/load_users.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/loader/load_users.c.i
+.PHONY : src/loader/load_users.c.i
 
-split_string.s: split_string.c.s
+src/loader/load_users.s: src/loader/load_users.c.s
 
-.PHONY : split_string.s
+.PHONY : src/loader/load_users.s
 
 # target to generate assembly for a file
-split_string.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/split_string.c.s
-.PHONY : split_string.c.s
+src/loader/load_users.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/loader/load_users.c.s
+.PHONY : src/loader/load_users.c.s
+
+src/loader/split_string.o: src/loader/split_string.c.o
+
+.PHONY : src/loader/split_string.o
+
+# target to build an object file
+src/loader/split_string.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/loader/split_string.c.o
+.PHONY : src/loader/split_string.c.o
+
+src/loader/split_string.i: src/loader/split_string.c.i
+
+.PHONY : src/loader/split_string.i
+
+# target to preprocess a source file
+src/loader/split_string.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/loader/split_string.c.i
+.PHONY : src/loader/split_string.c.i
+
+src/loader/split_string.s: src/loader/split_string.c.s
+
+.PHONY : src/loader/split_string.s
+
+# target to generate assembly for a file
+src/loader/split_string.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/loader/split_string.c.s
+.PHONY : src/loader/split_string.c.s
+
+src/main.o: src/main.c.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/main.c.o
+.PHONY : src/main.c.o
+
+src/main.i: src/main.c.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/main.c.s
+.PHONY : src/main.c.s
 
 # Help Target
 help:
@@ -232,15 +259,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... parser"
-	@echo "... load_clients.o"
-	@echo "... load_clients.i"
-	@echo "... load_clients.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... split_string.o"
-	@echo "... split_string.i"
-	@echo "... split_string.s"
+	@echo "... src/linked_list.o"
+	@echo "... src/linked_list.i"
+	@echo "... src/linked_list.s"
+	@echo "... src/loader/load_users.o"
+	@echo "... src/loader/load_users.i"
+	@echo "... src/loader/load_users.s"
+	@echo "... src/loader/split_string.o"
+	@echo "... src/loader/split_string.i"
+	@echo "... src/loader/split_string.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

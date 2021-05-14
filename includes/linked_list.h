@@ -5,6 +5,8 @@
 #ifndef MYTEAMSPARSER_LINKED_LIST_H
 #define MYTEAMSPARSER_LINKED_LIST_H
 
+#include "linked_list.h"
+
 typedef struct linked_list_s {
     void *data;
     struct linked_list_s *next;

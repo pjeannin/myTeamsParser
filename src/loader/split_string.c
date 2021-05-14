@@ -5,7 +5,7 @@
 ** split_string
 */
 
-#include "user.h"
+#include "../../includes/user.h"
 
 char **split_string(char *str, char *tok)
 {

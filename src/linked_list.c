@@ -5,7 +5,7 @@
 ** linked_list.c
 */
 
-#include "linked_list.h"
+#include "../includes/user.h"
 
 void linked_list_add_elem(linked_list_t *list_head, void *data)
 {
