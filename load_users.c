@@ -34,7 +34,7 @@ uuid_t *set_user_infos(char **splited_line)
     user_infos->uuid = (uuid_t)splited_line[1];
 }
 
-user_infos_t **load_users()
+linked_list_s *load_users()
 {
     linked_list_s *users_list_head = malloc(sizeof (linked_list_s));
     FILE *file = open_file(USERS_FILEPATH, KEY);
@@ -47,5 +47,5 @@ user_infos_t **load_users()
     while (getline(&line, &size, file) != -1) {
         linked_list_add_elem(set_user_infos(split_string(line)));
     }
-    return (user_infos);
+    return (users_list_head);
 }
