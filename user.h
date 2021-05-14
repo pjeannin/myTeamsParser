@@ -11,7 +11,7 @@
 #include <string.h>
 #include "linked_list.h"
 
-#define USERS_FILEPATH  "savefiles/cache_users.txt"
+#define USERS_FILEPATH  "savefiles/users.cache"
 #define KEY "68768767546534765356-myteams"
 
 typedef struct user_infos_s {
