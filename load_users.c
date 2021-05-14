@@ -26,26 +26,28 @@ FILE *open_file(char *filepath, char *key)
     return (file);
 }
 
+uuid_t *set_user_infos(char **splited_line)
+{
+    user_infos_t *user_infos = malloc(sizeof(user_infos_t));
+    char **teams_string = split_string(splited_line[2]);
+    char **channels_string = split_string(splited_line[3]);
+
+    user_infos->username = splited_line[0];
+    user_infos->uuid = (uuid_t)splited_line[1];
+}
+
 user_infos_t **load_users()
 {
-    user_infos_t **user_infos = malloc(sizeof (user_infos_t *) * 31);
-    FILE *file = open_file(USERS_FILEPATH, USERS_KEY);
+    linked_list_s *users_list_head = malloc(sizeof (linked_list_s));
+    FILE *file = open_file(USERS_FILEPATH, KEY);
     size_t size = 0;
     char *line = NULL;
     char **splitted_line = NULL;
 
-    if (!file) {
-        free(user_infos);
-        return (NULL);
-    }
-    for (int i = 0; i < 31; ++i) {
-        user_infos[i] = NULL;
-        if (getline(&line, &size, file) != -1) {
-            user_infos[i] = malloc(sizeof(user_infos_t));
-            splitted_line = split_string(line, ";");
-            user_infos[i]->username = splitted_line[0];
-            user_infos[i]->uuid = (uuid_t)splitted_line[1];
-        }
+    users_list_head->data = NULL;
+    users_list_head->next = NULL;
+    while (getline(&line, &size, file) != -1) {
+        linked_list_add_elem()
     }
     return (user_infos);
 }

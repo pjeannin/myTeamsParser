@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/pierre/Documents/Epitech/Tek2/B4 - Network Programming/parser/load_clients.c" "/Users/pierre/Documents/Epitech/Tek2/B4 - Network Programming/parser/cmake-build-debug/CMakeFiles/parser.dir/load_clients.c.o"
-  "/Users/pierre/Documents/Epitech/Tek2/B4 - Network Programming/parser/main.c" "/Users/pierre/Documents/Epitech/Tek2/B4 - Network Programming/parser/cmake-build-debug/CMakeFiles/parser.dir/main.c.o"
-  "/Users/pierre/Documents/Epitech/Tek2/B4 - Network Programming/parser/split_string.c" "/Users/pierre/Documents/Epitech/Tek2/B4 - Network Programming/parser/cmake-build-debug/CMakeFiles/parser.dir/split_string.c.o"
+  "/Users/pierre/Documents/Epitech/Tek2/B4 - Network Programming/myTeamsParser/load_clients.c" "/Users/pierre/Documents/Epitech/Tek2/B4 - Network Programming/myTeamsParser/cmake-build-debug/CMakeFiles/parser.dir/load_clients.c.o"
+  "/Users/pierre/Documents/Epitech/Tek2/B4 - Network Programming/myTeamsParser/main.c" "/Users/pierre/Documents/Epitech/Tek2/B4 - Network Programming/myTeamsParser/cmake-build-debug/CMakeFiles/parser.dir/main.c.o"
+  "/Users/pierre/Documents/Epitech/Tek2/B4 - Network Programming/myTeamsParser/split_string.c" "/Users/pierre/Documents/Epitech/Tek2/B4 - Network Programming/myTeamsParser/cmake-build-debug/CMakeFiles/parser.dir/split_string.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

@@ -9,15 +9,22 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include "linked_list.h"
 
-#define USERS_FILEPATH  "savefiles/Teams_Users.txt"
-#define USERS_KEY "68768767546534765356-myteams"
+#define USERS_FILEPATH  "savefiles/cache_users.txt"
+#define KEY "68768767546534765356-myteams"
 
 typedef struct user_infos_s {
     char *username;
     uuid_t uuid;
 } user_infos_t;
 
+typedef struct users_list_s {
+    user_infos_t *user;
+    struct users_list_s *next;
+} users_list_t;
+
+void linked_list_add_elem(linked_list_t *list_head, void *data);
 char **split_string(char *str, char *tok);
 void free_tab(char **tab);
 int tab_len(char **tab);
