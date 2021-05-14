@@ -5,7 +5,7 @@
 ** split_string
 */
 
-#include "client.h"
+#include "user.h"
 
 char **split_string(char *str, char *tok)
 {
