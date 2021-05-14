@@ -38,7 +38,7 @@ user_infos_t *set_user_infos(char **splited_line)
 
 linked_list_t *load_users()
 {
-    linked_list_t *users_list_head = malloc(sizeof (linked_list_s));
+    linked_list_t *users_list_head = malloc(sizeof (linked_list_t));
     FILE *file = open_file(USERS_FILEPATH, KEY);
     size_t size = 0;
     char *line = NULL;
