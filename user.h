@@ -19,11 +19,6 @@ typedef struct user_infos_s {
     uuid_t uuid;
 } user_infos_t;
 
-typedef struct users_list_s {
-    user_infos_t *user;
-    struct users_list_s *next;
-} users_list_t;
-
 void linked_list_add_elem(linked_list_t *list_head, void *data);
 char **split_string(char *str, char *tok);
 void free_tab(char **tab);
