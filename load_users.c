@@ -29,8 +29,6 @@ FILE *open_file(char *filepath, char *key)
 uuid_t *set_user_infos(char **splited_line)
 {
     user_infos_t *user_infos = malloc(sizeof(user_infos_t));
-    char **teams_string = split_string(splited_line[2]);
-    char **channels_string = split_string(splited_line[3]);
 
     user_infos->username = splited_line[0];
     user_infos->uuid = (uuid_t)splited_line[1];
