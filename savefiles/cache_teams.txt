@@ -1,0 +1,4 @@
+68768767546534765356-myteams
+team1;uuid;description;antony,killian,pierre;channel1_uuid
+team2;uuid;description;antony,killian,pierre;channel2_uuid
+team3;uuid;description;antony,killian,pierre;channel3_uuid

@@ -1,0 +1,13 @@
+68768767546534765356-myteams
+thread1;uuid;owner;message
+antony,answer
+kilian,answer
+antony,answer
+
+thread2;uuid;owner;message
+pierre,answer
+kilian,answer
+
+thread3;uuid;owner;message
+antony,answer
+pierre,answer
