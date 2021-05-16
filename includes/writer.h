@@ -19,5 +19,8 @@
 
 int check_file(char *filepath);
 int add_user(char *username, uuid_t uuid);
+int add_thread(char *title, uuid_t uuid, char *owner, char *message);
+int add_team(char *title, uuid_t uuid, char *description, char *owner);
+int add_channel(char *title, uuid_t uuid, char *description, char *owner);
 
 #endif //MYTEAMSPARSER_WRITER_H
