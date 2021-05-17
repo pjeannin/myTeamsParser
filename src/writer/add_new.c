@@ -70,10 +70,12 @@ int add_channel(char *title, uuid_t uuid, char *description, char *owner)
 int add_private_message(char *first, char *second, char *message,
                         time_t timestamp)
 {
+    char *beg = find_private_message_first_part(first, second);
     FILE *file = open_file(PRIVATE_MESSAGE_PATH, "a");
 
     if (file == (FILE *)-1)
         return (-1);
+    printf("%s", beg);
     fclose(file);
     return (0);
 }

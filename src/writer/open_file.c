@@ -11,7 +11,7 @@ FILE *open_file(char *filepath, char *mode)
 {
     if (check_file(CHANNEL_PATH) == -1)
         return ((FILE *)-1);
-    file = fopen(CHANNEL_PATH, mode);
+    FILE *file = fopen(CHANNEL_PATH, mode);
     if (!file)
         return ((FILE *)-1);
     return (file);
