@@ -10,7 +10,7 @@ add_executable(writer
         src/loader/load_users.c
         src/loader/split_string.c
         includes/linked_list.h
-        src/linked_list.c
+        src/loader/linked_list.c
         src/writer/add_new.c
         includes/writer.h
         src/writer/check_file.c
