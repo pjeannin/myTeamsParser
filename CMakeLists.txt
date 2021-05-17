@@ -14,7 +14,5 @@ add_executable(writer
         src/writer/add_new.c
         includes/writer.h
         src/writer/check_file.c
-        src/writer/uuid_to_char.c
-        src/writer/main.c
         src/writer/open_file.c
         src/writer/splt_private_message_file.c)
