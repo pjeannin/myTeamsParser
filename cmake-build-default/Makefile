@@ -130,44 +130,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named parser
+# Target rules for targets named writer
 
 # Build rule for target.
-parser: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parser
-.PHONY : parser
+writer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writer
+.PHONY : writer
 
 # fast build rule for target.
-parser/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/build
-.PHONY : parser/fast
+writer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/build
+.PHONY : writer/fast
 
-src/linked_list.o: src/linked_list.c.o
+src/loader/linked_list.o: src/loader/linked_list.c.o
 
-.PHONY : src/linked_list.o
+.PHONY : src/loader/linked_list.o
 
 # target to build an object file
-src/linked_list.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/linked_list.c.o
-.PHONY : src/linked_list.c.o
+src/loader/linked_list.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/linked_list.c.o
+.PHONY : src/loader/linked_list.c.o
 
-src/linked_list.i: src/linked_list.c.i
+src/loader/linked_list.i: src/loader/linked_list.c.i
 
-.PHONY : src/linked_list.i
+.PHONY : src/loader/linked_list.i
 
 # target to preprocess a source file
-src/linked_list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/linked_list.c.i
-.PHONY : src/linked_list.c.i
+src/loader/linked_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/linked_list.c.i
+.PHONY : src/loader/linked_list.c.i
 
-src/linked_list.s: src/linked_list.c.s
+src/loader/linked_list.s: src/loader/linked_list.c.s
 
-.PHONY : src/linked_list.s
+.PHONY : src/loader/linked_list.s
 
 # target to generate assembly for a file
-src/linked_list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/linked_list.c.s
-.PHONY : src/linked_list.c.s
+src/loader/linked_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/linked_list.c.s
+.PHONY : src/loader/linked_list.c.s
 
 src/loader/load_users.o: src/loader/load_users.c.o
 
@@ -175,7 +175,7 @@ src/loader/load_users.o: src/loader/load_users.c.o
 
 # target to build an object file
 src/loader/load_users.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/loader/load_users.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/load_users.c.o
 .PHONY : src/loader/load_users.c.o
 
 src/loader/load_users.i: src/loader/load_users.c.i
@@ -184,7 +184,7 @@ src/loader/load_users.i: src/loader/load_users.c.i
 
 # target to preprocess a source file
 src/loader/load_users.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/loader/load_users.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/load_users.c.i
 .PHONY : src/loader/load_users.c.i
 
 src/loader/load_users.s: src/loader/load_users.c.s
@@ -193,7 +193,7 @@ src/loader/load_users.s: src/loader/load_users.c.s
 
 # target to generate assembly for a file
 src/loader/load_users.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/loader/load_users.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/load_users.c.s
 .PHONY : src/loader/load_users.c.s
 
 src/loader/split_string.o: src/loader/split_string.c.o
@@ -202,7 +202,7 @@ src/loader/split_string.o: src/loader/split_string.c.o
 
 # target to build an object file
 src/loader/split_string.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/loader/split_string.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/split_string.c.o
 .PHONY : src/loader/split_string.c.o
 
 src/loader/split_string.i: src/loader/split_string.c.i
@@ -211,7 +211,7 @@ src/loader/split_string.i: src/loader/split_string.c.i
 
 # target to preprocess a source file
 src/loader/split_string.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/loader/split_string.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/split_string.c.i
 .PHONY : src/loader/split_string.c.i
 
 src/loader/split_string.s: src/loader/split_string.c.s
@@ -220,35 +220,116 @@ src/loader/split_string.s: src/loader/split_string.c.s
 
 # target to generate assembly for a file
 src/loader/split_string.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/loader/split_string.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/split_string.c.s
 .PHONY : src/loader/split_string.c.s
 
-src/main.o: src/main.c.o
+src/writer/add_new.o: src/writer/add_new.c.o
 
-.PHONY : src/main.o
+.PHONY : src/writer/add_new.o
 
 # target to build an object file
-src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/main.c.o
-.PHONY : src/main.c.o
+src/writer/add_new.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/add_new.c.o
+.PHONY : src/writer/add_new.c.o
 
-src/main.i: src/main.c.i
+src/writer/add_new.i: src/writer/add_new.c.i
 
-.PHONY : src/main.i
+.PHONY : src/writer/add_new.i
 
 # target to preprocess a source file
-src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/main.c.i
-.PHONY : src/main.c.i
+src/writer/add_new.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/add_new.c.i
+.PHONY : src/writer/add_new.c.i
 
-src/main.s: src/main.c.s
+src/writer/add_new.s: src/writer/add_new.c.s
 
-.PHONY : src/main.s
+.PHONY : src/writer/add_new.s
 
 # target to generate assembly for a file
-src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/main.c.s
-.PHONY : src/main.c.s
+src/writer/add_new.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/add_new.c.s
+.PHONY : src/writer/add_new.c.s
+
+src/writer/check_file.o: src/writer/check_file.c.o
+
+.PHONY : src/writer/check_file.o
+
+# target to build an object file
+src/writer/check_file.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/check_file.c.o
+.PHONY : src/writer/check_file.c.o
+
+src/writer/check_file.i: src/writer/check_file.c.i
+
+.PHONY : src/writer/check_file.i
+
+# target to preprocess a source file
+src/writer/check_file.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/check_file.c.i
+.PHONY : src/writer/check_file.c.i
+
+src/writer/check_file.s: src/writer/check_file.c.s
+
+.PHONY : src/writer/check_file.s
+
+# target to generate assembly for a file
+src/writer/check_file.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/check_file.c.s
+.PHONY : src/writer/check_file.c.s
+
+src/writer/open_file.o: src/writer/open_file.c.o
+
+.PHONY : src/writer/open_file.o
+
+# target to build an object file
+src/writer/open_file.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/open_file.c.o
+.PHONY : src/writer/open_file.c.o
+
+src/writer/open_file.i: src/writer/open_file.c.i
+
+.PHONY : src/writer/open_file.i
+
+# target to preprocess a source file
+src/writer/open_file.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/open_file.c.i
+.PHONY : src/writer/open_file.c.i
+
+src/writer/open_file.s: src/writer/open_file.c.s
+
+.PHONY : src/writer/open_file.s
+
+# target to generate assembly for a file
+src/writer/open_file.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/open_file.c.s
+.PHONY : src/writer/open_file.c.s
+
+src/writer/splt_private_message_file.o: src/writer/splt_private_message_file.c.o
+
+.PHONY : src/writer/splt_private_message_file.o
+
+# target to build an object file
+src/writer/splt_private_message_file.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/splt_private_message_file.c.o
+.PHONY : src/writer/splt_private_message_file.c.o
+
+src/writer/splt_private_message_file.i: src/writer/splt_private_message_file.c.i
+
+.PHONY : src/writer/splt_private_message_file.i
+
+# target to preprocess a source file
+src/writer/splt_private_message_file.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/splt_private_message_file.c.i
+.PHONY : src/writer/splt_private_message_file.c.i
+
+src/writer/splt_private_message_file.s: src/writer/splt_private_message_file.c.s
+
+.PHONY : src/writer/splt_private_message_file.s
+
+# target to generate assembly for a file
+src/writer/splt_private_message_file.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/splt_private_message_file.c.s
+.PHONY : src/writer/splt_private_message_file.c.s
 
 # Help Target
 help:
@@ -258,19 +339,28 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... parser"
-	@echo "... src/linked_list.o"
-	@echo "... src/linked_list.i"
-	@echo "... src/linked_list.s"
+	@echo "... writer"
+	@echo "... src/loader/linked_list.o"
+	@echo "... src/loader/linked_list.i"
+	@echo "... src/loader/linked_list.s"
 	@echo "... src/loader/load_users.o"
 	@echo "... src/loader/load_users.i"
 	@echo "... src/loader/load_users.s"
 	@echo "... src/loader/split_string.o"
 	@echo "... src/loader/split_string.i"
 	@echo "... src/loader/split_string.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/writer/add_new.o"
+	@echo "... src/writer/add_new.i"
+	@echo "... src/writer/add_new.s"
+	@echo "... src/writer/check_file.o"
+	@echo "... src/writer/check_file.i"
+	@echo "... src/writer/check_file.s"
+	@echo "... src/writer/open_file.o"
+	@echo "... src/writer/open_file.i"
+	@echo "... src/writer/open_file.s"
+	@echo "... src/writer/splt_private_message_file.o"
+	@echo "... src/writer/splt_private_message_file.i"
+	@echo "... src/writer/splt_private_message_file.s"
 .PHONY : help
 
 
