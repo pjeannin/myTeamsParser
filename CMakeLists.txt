@@ -6,7 +6,6 @@ set(CMAKE_C_STANDARD 11)
 include_directories(includes)
 
 add_executable(writer
-        src/main.c
         includes/user.h
         src/loader/load_users.c
         src/loader/split_string.c
