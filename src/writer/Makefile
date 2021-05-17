@@ -8,7 +8,7 @@
 PROJECT	=	Writer
 NAME	=	../../writer
 
-SRCS	=	$(shell find ./ -name '*.c' && find .. -name '*.c')
+SRCS	=	$(shell find ./ -name '*.c')
 
 OBJS	=	$(SRCS:.c=.o)
 
@@ -16,7 +16,7 @@ OBJS	=	$(SRCS:.c=.o)
 CFLAGS	+=	-I../../includes/
 CFLAGS	+=	-g3 -O2
 
-LDFLAGS	+= -luuidls
+LDFLAGS	+= -luuid
 
 
 SHELL	=	/bin/bash
