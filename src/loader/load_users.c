@@ -31,7 +31,7 @@ user_infos_t *set_user_infos(char **splited_line)
     user_infos_t *user_infos = malloc(sizeof(user_infos_t));
 
     user_infos->username = splited_line[0];
-    user_infos->uuid = (uuid_t)splited_line[1];
+    uuid_parse(splited_line[1], user_infos->uuid);
 
     return (user_infos);
 }
