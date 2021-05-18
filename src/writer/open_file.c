@@ -9,9 +9,9 @@
 
 FILE *open_file(char *filepath, char *mode)
 {
-    if (check_file(CHANNEL_PATH) == -1)
+    if (check_file(filepath) == -1)
         return ((FILE *)-1);
-    FILE *file = fopen(CHANNEL_PATH, mode);
+    FILE *file = fopen(filepath, mode);
     if (!file)
         return ((FILE *)-1);
     return (file);

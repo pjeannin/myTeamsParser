@@ -7,9 +7,34 @@
 
 #include "../../includes/writer.h"
 
+void my_putchar(char c)
+{
+    write(1, &c, 1);
+}
+
+void putstr(char *str)
+{
+    for (int i = 0; str[i]; ++i)
+        my_putchar(str[i]);
+}
+
+void putnbr(int n)
+{
+    if (n < 0)
+    {
+        my_putchar(0x2D);
+        n = -n;
+    }
+    if (n > 9)
+    {
+        putnbr(n/10);
+    }
+    my_putchar((n%10) + '0');
+}
+
 char *concat_str(char *str1, char *str2)
 {
-    char *res = malloc(sizeof(char) * (strlen(str1) + strlen(str2 + 1)));
+    char *res = malloc(sizeof(char) * (strlen(str1) + strlen(str2) + 1));
 
     for (int i = 0; str1[i]; ++i)
         res[i] = str1[i];
@@ -22,15 +47,16 @@ char *concat_str(char *str1, char *str2)
 static void add_line_to_var(char *file_content, char *line, int *index)
 {
     for (int i = 0; line[i]; ++i) {
-        file_content[*(index++) + i] = line[i];
+        file_content[*(index) + i] = line[i];
     }
+    (*index) += strlen(line);
 }
 
 static void fill_file_content_var(char *file_begening, char *file_end, FILE *file, char **names_tab)
 {
     int index = 0;
     int end = 0;
-    char *line;
+    char *line = NULL;
     int right_conv = 0;
     size_t size;
 
@@ -52,16 +78,35 @@ char *find_private_message_first_part(char *first_name, char *second_name)
     FILE *file = open_file(PRIVATE_MESSAGE_PATH, "r");
     char *file_begening = NULL;
     char *file_end = NULL;
-    char *names_tab[2] = {concat_str(first_name, concat_str("-", second_name)),
-        concat_str(second_name, concat_str("-", first_name))};
+    char *names_tab[2] = {concat_str(concat_str(first_name, concat_str("-", second_name)),"\n"),
+        concat_str(concat_str(second_name, concat_str("-", first_name)), "\n")};
     struct stat st;
 
     if (file == (FILE *)-1)
         return (NULL);
     stat(PRIVATE_MESSAGE_PATH, &st);
-    file_begening = malloc(sizeof(char) * 300);
-    file_end = malloc(sizeof(char) * 300);
+    file_begening = malloc(sizeof(char) * st.st_size);
+    file_end = malloc(sizeof(char) * st.st_size);
     fill_file_content_var(file_begening, file_end, file, names_tab);
     fclose(file);
     return (file_begening);
 }
+
+/*68768767546534765356-myteams
+antony-pierre
+antony:hello
+timestamp
+pierre:hello !
+timestamp
+antony:como esta ?;
+timestamp
+antony::)
+timestamp
+
+antony-killian
+kilian:t'as réussi la tâche à faire
+timestamp
+antony:ouaip j'te le donne demain
+timestamp
+kilian:niquel
+timestamp*/

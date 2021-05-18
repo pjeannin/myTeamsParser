@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
+#include <unistd.h>
 
 #define USER_PATH "savefiles/users.cache"
 #define THREAD_PATH "savefiles/threads.cache"
