@@ -522,6 +522,36 @@ src/writer/add_new.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/add_new.c.s
 .PHONY : src/writer/add_new.c.s
 
+src/writer/add_thread_channel_to_upper.o: src/writer/add_thread_channel_to_upper.c.o
+
+.PHONY : src/writer/add_thread_channel_to_upper.o
+
+# target to build an object file
+src/writer/add_thread_channel_to_upper.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/add_thread_channel_to_upper.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.o
+.PHONY : src/writer/add_thread_channel_to_upper.c.o
+
+src/writer/add_thread_channel_to_upper.i: src/writer/add_thread_channel_to_upper.c.i
+
+.PHONY : src/writer/add_thread_channel_to_upper.i
+
+# target to preprocess a source file
+src/writer/add_thread_channel_to_upper.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/add_thread_channel_to_upper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.i
+.PHONY : src/writer/add_thread_channel_to_upper.c.i
+
+src/writer/add_thread_channel_to_upper.s: src/writer/add_thread_channel_to_upper.c.s
+
+.PHONY : src/writer/add_thread_channel_to_upper.s
+
+# target to generate assembly for a file
+src/writer/add_thread_channel_to_upper.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/add_thread_channel_to_upper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.s
+.PHONY : src/writer/add_thread_channel_to_upper.c.s
+
 src/writer/add_thread_reply.o: src/writer/add_thread_reply.c.o
 
 .PHONY : src/writer/add_thread_reply.o
@@ -548,6 +578,36 @@ src/writer/add_thread_reply.s: src/writer/add_thread_reply.c.s
 src/writer/add_thread_reply.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/add_thread_reply.c.s
 .PHONY : src/writer/add_thread_reply.c.s
+
+src/writer/channel_subscribe.o: src/writer/channel_subscribe.c.o
+
+.PHONY : src/writer/channel_subscribe.o
+
+# target to build an object file
+src/writer/channel_subscribe.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/channel_subscribe.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/writer/channel_subscribe.c.o
+.PHONY : src/writer/channel_subscribe.c.o
+
+src/writer/channel_subscribe.i: src/writer/channel_subscribe.c.i
+
+.PHONY : src/writer/channel_subscribe.i
+
+# target to preprocess a source file
+src/writer/channel_subscribe.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/channel_subscribe.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/writer/channel_subscribe.c.i
+.PHONY : src/writer/channel_subscribe.c.i
+
+src/writer/channel_subscribe.s: src/writer/channel_subscribe.c.s
+
+.PHONY : src/writer/channel_subscribe.s
+
+# target to generate assembly for a file
+src/writer/channel_subscribe.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/channel_subscribe.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/writer/channel_subscribe.c.s
+.PHONY : src/writer/channel_subscribe.c.s
 
 src/writer/check_file.o: src/writer/check_file.c.o
 
@@ -603,6 +663,36 @@ src/writer/open_file.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/open_file.c.s
 .PHONY : src/writer/open_file.c.s
 
+src/writer/set_parent.o: src/writer/set_parent.c.o
+
+.PHONY : src/writer/set_parent.o
+
+# target to build an object file
+src/writer/set_parent.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/set_parent.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/writer/set_parent.c.o
+.PHONY : src/writer/set_parent.c.o
+
+src/writer/set_parent.i: src/writer/set_parent.c.i
+
+.PHONY : src/writer/set_parent.i
+
+# target to preprocess a source file
+src/writer/set_parent.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/set_parent.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/writer/set_parent.c.i
+.PHONY : src/writer/set_parent.c.i
+
+src/writer/set_parent.s: src/writer/set_parent.c.s
+
+.PHONY : src/writer/set_parent.s
+
+# target to generate assembly for a file
+src/writer/set_parent.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/set_parent.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/writer/set_parent.c.s
+.PHONY : src/writer/set_parent.c.s
+
 src/writer/splt_private_message_file.o: src/writer/splt_private_message_file.c.o
 
 .PHONY : src/writer/splt_private_message_file.o
@@ -629,6 +719,33 @@ src/writer/splt_private_message_file.s: src/writer/splt_private_message_file.c.s
 src/writer/splt_private_message_file.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/splt_private_message_file.c.s
 .PHONY : src/writer/splt_private_message_file.c.s
+
+src/writer/team_subscribe.o: src/writer/team_subscribe.c.o
+
+.PHONY : src/writer/team_subscribe.o
+
+# target to build an object file
+src/writer/team_subscribe.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/team_subscribe.c.o
+.PHONY : src/writer/team_subscribe.c.o
+
+src/writer/team_subscribe.i: src/writer/team_subscribe.c.i
+
+.PHONY : src/writer/team_subscribe.i
+
+# target to preprocess a source file
+src/writer/team_subscribe.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/team_subscribe.c.i
+.PHONY : src/writer/team_subscribe.c.i
+
+src/writer/team_subscribe.s: src/writer/team_subscribe.c.s
+
+.PHONY : src/writer/team_subscribe.s
+
+# target to generate assembly for a file
+src/writer/team_subscribe.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/team_subscribe.c.s
+.PHONY : src/writer/team_subscribe.c.s
 
 # Help Target
 help:
@@ -680,18 +797,30 @@ help:
 	@echo "... src/writer/add_new.o"
 	@echo "... src/writer/add_new.i"
 	@echo "... src/writer/add_new.s"
+	@echo "... src/writer/add_thread_channel_to_upper.o"
+	@echo "... src/writer/add_thread_channel_to_upper.i"
+	@echo "... src/writer/add_thread_channel_to_upper.s"
 	@echo "... src/writer/add_thread_reply.o"
 	@echo "... src/writer/add_thread_reply.i"
 	@echo "... src/writer/add_thread_reply.s"
+	@echo "... src/writer/channel_subscribe.o"
+	@echo "... src/writer/channel_subscribe.i"
+	@echo "... src/writer/channel_subscribe.s"
 	@echo "... src/writer/check_file.o"
 	@echo "... src/writer/check_file.i"
 	@echo "... src/writer/check_file.s"
 	@echo "... src/writer/open_file.o"
 	@echo "... src/writer/open_file.i"
 	@echo "... src/writer/open_file.s"
+	@echo "... src/writer/set_parent.o"
+	@echo "... src/writer/set_parent.i"
+	@echo "... src/writer/set_parent.s"
 	@echo "... src/writer/splt_private_message_file.o"
 	@echo "... src/writer/splt_private_message_file.i"
 	@echo "... src/writer/splt_private_message_file.s"
+	@echo "... src/writer/team_subscribe.o"
+	@echo "... src/writer/team_subscribe.i"
+	@echo "... src/writer/team_subscribe.s"
 .PHONY : help
 
 

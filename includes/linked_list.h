@@ -6,7 +6,7 @@
 #define MYTEAMSPARSER_LINKED_LIST_H
 
 #include <uuid/uuid.h>
-#include "linked_list.h"
+#include <stddef.h>
 
 struct thread_t {
     char *original_post;

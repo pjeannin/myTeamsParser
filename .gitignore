@@ -3,3 +3,6 @@ CMakeLists.txt
 a.out
 src/writer/main.c
 *.o
+cmake-build-debug
+cmake-build-default
+.idea

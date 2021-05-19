@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/lists/team_list.c" "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles/lists.dir/src/lists/team_list.c.o"
   "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/lists/thread_list.c" "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles/lists.dir/src/lists/thread_list.c.o"
   "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/lists/users_list.c" "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles/lists.dir/src/lists/users_list.c.o"
+  "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/add_thread_channel_to_upper.c" "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.o"
+  "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/channel_subscribe.c" "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles/lists.dir/src/writer/channel_subscribe.c.o"
+  "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/set_parent.c" "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles/lists.dir/src/writer/set_parent.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

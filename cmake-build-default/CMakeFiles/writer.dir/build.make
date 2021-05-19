@@ -154,6 +154,58 @@ CMakeFiles/writer.dir/src/writer/add_thread_reply.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/writer.dir/src/writer/add_thread_reply.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/add_thread_reply.c -o CMakeFiles/writer.dir/src/writer/add_thread_reply.c.s
 
+CMakeFiles/writer.dir/src/writer/team_subscribe.c.o: CMakeFiles/writer.dir/flags.make
+CMakeFiles/writer.dir/src/writer/team_subscribe.c.o: ../src/writer/team_subscribe.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/writer.dir/src/writer/team_subscribe.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/writer.dir/src/writer/team_subscribe.c.o -c /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/team_subscribe.c
+
+CMakeFiles/writer.dir/src/writer/team_subscribe.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/writer.dir/src/writer/team_subscribe.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/team_subscribe.c > CMakeFiles/writer.dir/src/writer/team_subscribe.c.i
+
+CMakeFiles/writer.dir/src/writer/team_subscribe.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/writer.dir/src/writer/team_subscribe.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/team_subscribe.c -o CMakeFiles/writer.dir/src/writer/team_subscribe.c.s
+
+CMakeFiles/writer.dir/src/writer/channel_subscribe.c.o: CMakeFiles/writer.dir/flags.make
+CMakeFiles/writer.dir/src/writer/channel_subscribe.c.o: ../src/writer/channel_subscribe.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/writer.dir/src/writer/channel_subscribe.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/writer.dir/src/writer/channel_subscribe.c.o -c /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/channel_subscribe.c
+
+CMakeFiles/writer.dir/src/writer/channel_subscribe.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/writer.dir/src/writer/channel_subscribe.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/channel_subscribe.c > CMakeFiles/writer.dir/src/writer/channel_subscribe.c.i
+
+CMakeFiles/writer.dir/src/writer/channel_subscribe.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/writer.dir/src/writer/channel_subscribe.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/channel_subscribe.c -o CMakeFiles/writer.dir/src/writer/channel_subscribe.c.s
+
+CMakeFiles/writer.dir/src/writer/add_thread_channel_to_upper.c.o: CMakeFiles/writer.dir/flags.make
+CMakeFiles/writer.dir/src/writer/add_thread_channel_to_upper.c.o: ../src/writer/add_thread_channel_to_upper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/writer.dir/src/writer/add_thread_channel_to_upper.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/writer.dir/src/writer/add_thread_channel_to_upper.c.o -c /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/add_thread_channel_to_upper.c
+
+CMakeFiles/writer.dir/src/writer/add_thread_channel_to_upper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/writer.dir/src/writer/add_thread_channel_to_upper.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/add_thread_channel_to_upper.c > CMakeFiles/writer.dir/src/writer/add_thread_channel_to_upper.c.i
+
+CMakeFiles/writer.dir/src/writer/add_thread_channel_to_upper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/writer.dir/src/writer/add_thread_channel_to_upper.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/add_thread_channel_to_upper.c -o CMakeFiles/writer.dir/src/writer/add_thread_channel_to_upper.c.s
+
+CMakeFiles/writer.dir/src/writer/set_parent.c.o: CMakeFiles/writer.dir/flags.make
+CMakeFiles/writer.dir/src/writer/set_parent.c.o: ../src/writer/set_parent.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/writer.dir/src/writer/set_parent.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/writer.dir/src/writer/set_parent.c.o -c /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/set_parent.c
+
+CMakeFiles/writer.dir/src/writer/set_parent.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/writer.dir/src/writer/set_parent.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/set_parent.c > CMakeFiles/writer.dir/src/writer/set_parent.c.i
+
+CMakeFiles/writer.dir/src/writer/set_parent.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/writer.dir/src/writer/set_parent.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/set_parent.c -o CMakeFiles/writer.dir/src/writer/set_parent.c.s
+
 # Object files for target writer
 writer_OBJECTS = \
 "CMakeFiles/writer.dir/src/writer/add_new.c.o" \
@@ -161,7 +213,11 @@ writer_OBJECTS = \
 "CMakeFiles/writer.dir/src/writer/open_file.c.o" \
 "CMakeFiles/writer.dir/src/writer/splt_private_message_file.c.o" \
 "CMakeFiles/writer.dir/src/loader/main.c.o" \
-"CMakeFiles/writer.dir/src/writer/add_thread_reply.c.o"
+"CMakeFiles/writer.dir/src/writer/add_thread_reply.c.o" \
+"CMakeFiles/writer.dir/src/writer/team_subscribe.c.o" \
+"CMakeFiles/writer.dir/src/writer/channel_subscribe.c.o" \
+"CMakeFiles/writer.dir/src/writer/add_thread_channel_to_upper.c.o" \
+"CMakeFiles/writer.dir/src/writer/set_parent.c.o"
 
 # External object files for target writer
 writer_EXTERNAL_OBJECTS =
@@ -172,9 +228,13 @@ writer: CMakeFiles/writer.dir/src/writer/open_file.c.o
 writer: CMakeFiles/writer.dir/src/writer/splt_private_message_file.c.o
 writer: CMakeFiles/writer.dir/src/loader/main.c.o
 writer: CMakeFiles/writer.dir/src/writer/add_thread_reply.c.o
+writer: CMakeFiles/writer.dir/src/writer/team_subscribe.c.o
+writer: CMakeFiles/writer.dir/src/writer/channel_subscribe.c.o
+writer: CMakeFiles/writer.dir/src/writer/add_thread_channel_to_upper.c.o
+writer: CMakeFiles/writer.dir/src/writer/set_parent.c.o
 writer: CMakeFiles/writer.dir/build.make
 writer: CMakeFiles/writer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable writer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable writer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/writer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

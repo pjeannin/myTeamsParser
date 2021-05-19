@@ -3,6 +3,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/lists.dir/src/lists/team_list.c.o"
   "CMakeFiles/lists.dir/src/lists/thread_list.c.o"
   "CMakeFiles/lists.dir/src/lists/users_list.c.o"
+  "CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.o"
+  "CMakeFiles/lists.dir/src/writer/channel_subscribe.c.o"
+  "CMakeFiles/lists.dir/src/writer/set_parent.c.o"
   "lists"
   "lists.pdb"
 )

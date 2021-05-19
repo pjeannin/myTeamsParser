@@ -219,8 +219,16 @@
 		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/add_new.c">
 			<Option target="writer"/>
 		</Unit>
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/add_thread_channel_to_upper.c">
+			<Option target="writer"/>
+			<Option target="lists"/>
+		</Unit>
 		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/add_thread_reply.c">
 			<Option target="writer"/>
+		</Unit>
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/channel_subscribe.c">
+			<Option target="writer"/>
+			<Option target="lists"/>
 		</Unit>
 		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/check_file.c">
 			<Option target="writer"/>
@@ -228,7 +236,14 @@
 		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/open_file.c">
 			<Option target="writer"/>
 		</Unit>
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/set_parent.c">
+			<Option target="writer"/>
+			<Option target="lists"/>
+		</Unit>
 		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/splt_private_message_file.c">
+			<Option target="writer"/>
+		</Unit>
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/team_subscribe.c">
 			<Option target="writer"/>
 		</Unit>
 		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/CMakeLists.txt">

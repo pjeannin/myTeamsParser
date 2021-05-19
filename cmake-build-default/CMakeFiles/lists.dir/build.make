@@ -128,12 +128,54 @@ CMakeFiles/lists.dir/src/lists/users_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lists.dir/src/lists/users_list.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/lists/users_list.c -o CMakeFiles/lists.dir/src/lists/users_list.c.s
 
+CMakeFiles/lists.dir/src/writer/channel_subscribe.c.o: CMakeFiles/lists.dir/flags.make
+CMakeFiles/lists.dir/src/writer/channel_subscribe.c.o: ../src/writer/channel_subscribe.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/lists.dir/src/writer/channel_subscribe.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lists.dir/src/writer/channel_subscribe.c.o -c /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/channel_subscribe.c
+
+CMakeFiles/lists.dir/src/writer/channel_subscribe.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lists.dir/src/writer/channel_subscribe.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/channel_subscribe.c > CMakeFiles/lists.dir/src/writer/channel_subscribe.c.i
+
+CMakeFiles/lists.dir/src/writer/channel_subscribe.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lists.dir/src/writer/channel_subscribe.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/channel_subscribe.c -o CMakeFiles/lists.dir/src/writer/channel_subscribe.c.s
+
+CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.o: CMakeFiles/lists.dir/flags.make
+CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.o: ../src/writer/add_thread_channel_to_upper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.o -c /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/add_thread_channel_to_upper.c
+
+CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/add_thread_channel_to_upper.c > CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.i
+
+CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/add_thread_channel_to_upper.c -o CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.s
+
+CMakeFiles/lists.dir/src/writer/set_parent.c.o: CMakeFiles/lists.dir/flags.make
+CMakeFiles/lists.dir/src/writer/set_parent.c.o: ../src/writer/set_parent.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/lists.dir/src/writer/set_parent.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lists.dir/src/writer/set_parent.c.o -c /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/set_parent.c
+
+CMakeFiles/lists.dir/src/writer/set_parent.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lists.dir/src/writer/set_parent.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/set_parent.c > CMakeFiles/lists.dir/src/writer/set_parent.c.i
+
+CMakeFiles/lists.dir/src/writer/set_parent.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lists.dir/src/writer/set_parent.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/set_parent.c -o CMakeFiles/lists.dir/src/writer/set_parent.c.s
+
 # Object files for target lists
 lists_OBJECTS = \
 "CMakeFiles/lists.dir/src/lists/channel_list.c.o" \
 "CMakeFiles/lists.dir/src/lists/team_list.c.o" \
 "CMakeFiles/lists.dir/src/lists/thread_list.c.o" \
-"CMakeFiles/lists.dir/src/lists/users_list.c.o"
+"CMakeFiles/lists.dir/src/lists/users_list.c.o" \
+"CMakeFiles/lists.dir/src/writer/channel_subscribe.c.o" \
+"CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.o" \
+"CMakeFiles/lists.dir/src/writer/set_parent.c.o"
 
 # External object files for target lists
 lists_EXTERNAL_OBJECTS =
@@ -142,9 +184,12 @@ lists: CMakeFiles/lists.dir/src/lists/channel_list.c.o
 lists: CMakeFiles/lists.dir/src/lists/team_list.c.o
 lists: CMakeFiles/lists.dir/src/lists/thread_list.c.o
 lists: CMakeFiles/lists.dir/src/lists/users_list.c.o
+lists: CMakeFiles/lists.dir/src/writer/channel_subscribe.c.o
+lists: CMakeFiles/lists.dir/src/writer/add_thread_channel_to_upper.c.o
+lists: CMakeFiles/lists.dir/src/writer/set_parent.c.o
 lists: CMakeFiles/lists.dir/build.make
 lists: CMakeFiles/lists.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable lists"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable lists"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lists.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
