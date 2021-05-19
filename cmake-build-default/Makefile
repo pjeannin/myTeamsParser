@@ -276,32 +276,113 @@ src/lists/users_list.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/lists/users_list.c.s
 .PHONY : src/lists/users_list.c.s
 
-src/loader/linked_list.o: src/loader/linked_list.c.o
+src/loader/check_file.o: src/loader/check_file.c.o
 
-.PHONY : src/loader/linked_list.o
+.PHONY : src/loader/check_file.o
 
 # target to build an object file
-src/loader/linked_list.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/linked_list.c.o
-.PHONY : src/loader/linked_list.c.o
+src/loader/check_file.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/check_file.c.o
+.PHONY : src/loader/check_file.c.o
 
-src/loader/linked_list.i: src/loader/linked_list.c.i
+src/loader/check_file.i: src/loader/check_file.c.i
 
-.PHONY : src/loader/linked_list.i
+.PHONY : src/loader/check_file.i
 
 # target to preprocess a source file
-src/loader/linked_list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/linked_list.c.i
-.PHONY : src/loader/linked_list.c.i
+src/loader/check_file.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/check_file.c.i
+.PHONY : src/loader/check_file.c.i
 
-src/loader/linked_list.s: src/loader/linked_list.c.s
+src/loader/check_file.s: src/loader/check_file.c.s
 
-.PHONY : src/loader/linked_list.s
+.PHONY : src/loader/check_file.s
 
 # target to generate assembly for a file
-src/loader/linked_list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/linked_list.c.s
-.PHONY : src/loader/linked_list.c.s
+src/loader/check_file.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/check_file.c.s
+.PHONY : src/loader/check_file.c.s
+
+src/loader/load_channel.o: src/loader/load_channel.c.o
+
+.PHONY : src/loader/load_channel.o
+
+# target to build an object file
+src/loader/load_channel.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/load_channel.c.o
+.PHONY : src/loader/load_channel.c.o
+
+src/loader/load_channel.i: src/loader/load_channel.c.i
+
+.PHONY : src/loader/load_channel.i
+
+# target to preprocess a source file
+src/loader/load_channel.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/load_channel.c.i
+.PHONY : src/loader/load_channel.c.i
+
+src/loader/load_channel.s: src/loader/load_channel.c.s
+
+.PHONY : src/loader/load_channel.s
+
+# target to generate assembly for a file
+src/loader/load_channel.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/load_channel.c.s
+.PHONY : src/loader/load_channel.c.s
+
+src/loader/load_teams.o: src/loader/load_teams.c.o
+
+.PHONY : src/loader/load_teams.o
+
+# target to build an object file
+src/loader/load_teams.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/load_teams.c.o
+.PHONY : src/loader/load_teams.c.o
+
+src/loader/load_teams.i: src/loader/load_teams.c.i
+
+.PHONY : src/loader/load_teams.i
+
+# target to preprocess a source file
+src/loader/load_teams.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/load_teams.c.i
+.PHONY : src/loader/load_teams.c.i
+
+src/loader/load_teams.s: src/loader/load_teams.c.s
+
+.PHONY : src/loader/load_teams.s
+
+# target to generate assembly for a file
+src/loader/load_teams.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/load_teams.c.s
+.PHONY : src/loader/load_teams.c.s
+
+src/loader/load_threads.o: src/loader/load_threads.c.o
+
+.PHONY : src/loader/load_threads.o
+
+# target to build an object file
+src/loader/load_threads.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/load_threads.c.o
+.PHONY : src/loader/load_threads.c.o
+
+src/loader/load_threads.i: src/loader/load_threads.c.i
+
+.PHONY : src/loader/load_threads.i
+
+# target to preprocess a source file
+src/loader/load_threads.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/load_threads.c.i
+.PHONY : src/loader/load_threads.c.i
+
+src/loader/load_threads.s: src/loader/load_threads.c.s
+
+.PHONY : src/loader/load_threads.s
+
+# target to generate assembly for a file
+src/loader/load_threads.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/load_threads.c.s
+.PHONY : src/loader/load_threads.c.s
 
 src/loader/load_users.o: src/loader/load_users.c.o
 
@@ -360,6 +441,33 @@ src/loader/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/main.c.s
 .PHONY : src/loader/main.c.s
 
+src/loader/open_file.o: src/loader/open_file.c.o
+
+.PHONY : src/loader/open_file.o
+
+# target to build an object file
+src/loader/open_file.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/open_file.c.o
+.PHONY : src/loader/open_file.c.o
+
+src/loader/open_file.i: src/loader/open_file.c.i
+
+.PHONY : src/loader/open_file.i
+
+# target to preprocess a source file
+src/loader/open_file.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/open_file.c.i
+.PHONY : src/loader/open_file.c.i
+
+src/loader/open_file.s: src/loader/open_file.c.s
+
+.PHONY : src/loader/open_file.s
+
+# target to generate assembly for a file
+src/loader/open_file.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/open_file.c.s
+.PHONY : src/loader/open_file.c.s
+
 src/loader/split_string.o: src/loader/split_string.c.o
 
 .PHONY : src/loader/split_string.o
@@ -413,6 +521,33 @@ src/writer/add_new.s: src/writer/add_new.c.s
 src/writer/add_new.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/add_new.c.s
 .PHONY : src/writer/add_new.c.s
+
+src/writer/add_thread_reply.o: src/writer/add_thread_reply.c.o
+
+.PHONY : src/writer/add_thread_reply.o
+
+# target to build an object file
+src/writer/add_thread_reply.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/add_thread_reply.c.o
+.PHONY : src/writer/add_thread_reply.c.o
+
+src/writer/add_thread_reply.i: src/writer/add_thread_reply.c.i
+
+.PHONY : src/writer/add_thread_reply.i
+
+# target to preprocess a source file
+src/writer/add_thread_reply.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/add_thread_reply.c.i
+.PHONY : src/writer/add_thread_reply.c.i
+
+src/writer/add_thread_reply.s: src/writer/add_thread_reply.c.s
+
+.PHONY : src/writer/add_thread_reply.s
+
+# target to generate assembly for a file
+src/writer/add_thread_reply.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer/add_thread_reply.c.s
+.PHONY : src/writer/add_thread_reply.c.s
 
 src/writer/check_file.o: src/writer/check_file.c.o
 
@@ -518,21 +653,36 @@ help:
 	@echo "... src/lists/users_list.o"
 	@echo "... src/lists/users_list.i"
 	@echo "... src/lists/users_list.s"
-	@echo "... src/loader/linked_list.o"
-	@echo "... src/loader/linked_list.i"
-	@echo "... src/loader/linked_list.s"
+	@echo "... src/loader/check_file.o"
+	@echo "... src/loader/check_file.i"
+	@echo "... src/loader/check_file.s"
+	@echo "... src/loader/load_channel.o"
+	@echo "... src/loader/load_channel.i"
+	@echo "... src/loader/load_channel.s"
+	@echo "... src/loader/load_teams.o"
+	@echo "... src/loader/load_teams.i"
+	@echo "... src/loader/load_teams.s"
+	@echo "... src/loader/load_threads.o"
+	@echo "... src/loader/load_threads.i"
+	@echo "... src/loader/load_threads.s"
 	@echo "... src/loader/load_users.o"
 	@echo "... src/loader/load_users.i"
 	@echo "... src/loader/load_users.s"
 	@echo "... src/loader/main.o"
 	@echo "... src/loader/main.i"
 	@echo "... src/loader/main.s"
+	@echo "... src/loader/open_file.o"
+	@echo "... src/loader/open_file.i"
+	@echo "... src/loader/open_file.s"
 	@echo "... src/loader/split_string.o"
 	@echo "... src/loader/split_string.i"
 	@echo "... src/loader/split_string.s"
 	@echo "... src/writer/add_new.o"
 	@echo "... src/writer/add_new.i"
 	@echo "... src/writer/add_new.s"
+	@echo "... src/writer/add_thread_reply.o"
+	@echo "... src/writer/add_thread_reply.i"
+	@echo "... src/writer/add_thread_reply.s"
 	@echo "... src/writer/check_file.o"
 	@echo "... src/writer/check_file.i"
 	@echo "... src/writer/check_file.s"

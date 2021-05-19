@@ -89,22 +89,9 @@ CMakeFiles/loader.dir/src/loader/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/loader.dir/src/loader/main.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/main.c -o CMakeFiles/loader.dir/src/loader/main.c.s
 
-CMakeFiles/loader.dir/src/loader/load_users.c.o: CMakeFiles/loader.dir/flags.make
-CMakeFiles/loader.dir/src/loader/load_users.c.o: ../src/loader/load_users.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/loader.dir/src/loader/load_users.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/loader.dir/src/loader/load_users.c.o -c /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_users.c
-
-CMakeFiles/loader.dir/src/loader/load_users.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/loader.dir/src/loader/load_users.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_users.c > CMakeFiles/loader.dir/src/loader/load_users.c.i
-
-CMakeFiles/loader.dir/src/loader/load_users.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/loader.dir/src/loader/load_users.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_users.c -o CMakeFiles/loader.dir/src/loader/load_users.c.s
-
 CMakeFiles/loader.dir/src/loader/split_string.c.o: CMakeFiles/loader.dir/flags.make
 CMakeFiles/loader.dir/src/loader/split_string.c.o: ../src/loader/split_string.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/loader.dir/src/loader/split_string.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/loader.dir/src/loader/split_string.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/loader.dir/src/loader/split_string.c.o -c /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/split_string.c
 
 CMakeFiles/loader.dir/src/loader/split_string.c.i: cmake_force
@@ -115,36 +102,109 @@ CMakeFiles/loader.dir/src/loader/split_string.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/loader.dir/src/loader/split_string.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/split_string.c -o CMakeFiles/loader.dir/src/loader/split_string.c.s
 
-CMakeFiles/loader.dir/src/loader/linked_list.c.o: CMakeFiles/loader.dir/flags.make
-CMakeFiles/loader.dir/src/loader/linked_list.c.o: ../src/loader/linked_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/loader.dir/src/loader/linked_list.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/loader.dir/src/loader/linked_list.c.o -c /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/linked_list.c
+CMakeFiles/loader.dir/src/loader/check_file.c.o: CMakeFiles/loader.dir/flags.make
+CMakeFiles/loader.dir/src/loader/check_file.c.o: ../src/loader/check_file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/loader.dir/src/loader/check_file.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/loader.dir/src/loader/check_file.c.o -c /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/check_file.c
 
-CMakeFiles/loader.dir/src/loader/linked_list.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/loader.dir/src/loader/linked_list.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/linked_list.c > CMakeFiles/loader.dir/src/loader/linked_list.c.i
+CMakeFiles/loader.dir/src/loader/check_file.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/loader.dir/src/loader/check_file.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/check_file.c > CMakeFiles/loader.dir/src/loader/check_file.c.i
 
-CMakeFiles/loader.dir/src/loader/linked_list.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/loader.dir/src/loader/linked_list.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/linked_list.c -o CMakeFiles/loader.dir/src/loader/linked_list.c.s
+CMakeFiles/loader.dir/src/loader/check_file.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/loader.dir/src/loader/check_file.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/check_file.c -o CMakeFiles/loader.dir/src/loader/check_file.c.s
+
+CMakeFiles/loader.dir/src/loader/open_file.c.o: CMakeFiles/loader.dir/flags.make
+CMakeFiles/loader.dir/src/loader/open_file.c.o: ../src/loader/open_file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/loader.dir/src/loader/open_file.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/loader.dir/src/loader/open_file.c.o -c /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/open_file.c
+
+CMakeFiles/loader.dir/src/loader/open_file.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/loader.dir/src/loader/open_file.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/open_file.c > CMakeFiles/loader.dir/src/loader/open_file.c.i
+
+CMakeFiles/loader.dir/src/loader/open_file.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/loader.dir/src/loader/open_file.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/open_file.c -o CMakeFiles/loader.dir/src/loader/open_file.c.s
+
+CMakeFiles/loader.dir/src/loader/load_users.c.o: CMakeFiles/loader.dir/flags.make
+CMakeFiles/loader.dir/src/loader/load_users.c.o: ../src/loader/load_users.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/loader.dir/src/loader/load_users.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/loader.dir/src/loader/load_users.c.o -c /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_users.c
+
+CMakeFiles/loader.dir/src/loader/load_users.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/loader.dir/src/loader/load_users.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_users.c > CMakeFiles/loader.dir/src/loader/load_users.c.i
+
+CMakeFiles/loader.dir/src/loader/load_users.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/loader.dir/src/loader/load_users.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_users.c -o CMakeFiles/loader.dir/src/loader/load_users.c.s
+
+CMakeFiles/loader.dir/src/loader/load_teams.c.o: CMakeFiles/loader.dir/flags.make
+CMakeFiles/loader.dir/src/loader/load_teams.c.o: ../src/loader/load_teams.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/loader.dir/src/loader/load_teams.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/loader.dir/src/loader/load_teams.c.o -c /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_teams.c
+
+CMakeFiles/loader.dir/src/loader/load_teams.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/loader.dir/src/loader/load_teams.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_teams.c > CMakeFiles/loader.dir/src/loader/load_teams.c.i
+
+CMakeFiles/loader.dir/src/loader/load_teams.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/loader.dir/src/loader/load_teams.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_teams.c -o CMakeFiles/loader.dir/src/loader/load_teams.c.s
+
+CMakeFiles/loader.dir/src/loader/load_threads.c.o: CMakeFiles/loader.dir/flags.make
+CMakeFiles/loader.dir/src/loader/load_threads.c.o: ../src/loader/load_threads.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/loader.dir/src/loader/load_threads.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/loader.dir/src/loader/load_threads.c.o -c /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_threads.c
+
+CMakeFiles/loader.dir/src/loader/load_threads.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/loader.dir/src/loader/load_threads.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_threads.c > CMakeFiles/loader.dir/src/loader/load_threads.c.i
+
+CMakeFiles/loader.dir/src/loader/load_threads.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/loader.dir/src/loader/load_threads.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_threads.c -o CMakeFiles/loader.dir/src/loader/load_threads.c.s
+
+CMakeFiles/loader.dir/src/loader/load_channel.c.o: CMakeFiles/loader.dir/flags.make
+CMakeFiles/loader.dir/src/loader/load_channel.c.o: ../src/loader/load_channel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/loader.dir/src/loader/load_channel.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/loader.dir/src/loader/load_channel.c.o -c /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_channel.c
+
+CMakeFiles/loader.dir/src/loader/load_channel.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/loader.dir/src/loader/load_channel.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_channel.c > CMakeFiles/loader.dir/src/loader/load_channel.c.i
+
+CMakeFiles/loader.dir/src/loader/load_channel.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/loader.dir/src/loader/load_channel.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_channel.c -o CMakeFiles/loader.dir/src/loader/load_channel.c.s
 
 # Object files for target loader
 loader_OBJECTS = \
 "CMakeFiles/loader.dir/src/loader/main.c.o" \
-"CMakeFiles/loader.dir/src/loader/load_users.c.o" \
 "CMakeFiles/loader.dir/src/loader/split_string.c.o" \
-"CMakeFiles/loader.dir/src/loader/linked_list.c.o"
+"CMakeFiles/loader.dir/src/loader/check_file.c.o" \
+"CMakeFiles/loader.dir/src/loader/open_file.c.o" \
+"CMakeFiles/loader.dir/src/loader/load_users.c.o" \
+"CMakeFiles/loader.dir/src/loader/load_teams.c.o" \
+"CMakeFiles/loader.dir/src/loader/load_threads.c.o" \
+"CMakeFiles/loader.dir/src/loader/load_channel.c.o"
 
 # External object files for target loader
 loader_EXTERNAL_OBJECTS =
 
 loader: CMakeFiles/loader.dir/src/loader/main.c.o
-loader: CMakeFiles/loader.dir/src/loader/load_users.c.o
 loader: CMakeFiles/loader.dir/src/loader/split_string.c.o
-loader: CMakeFiles/loader.dir/src/loader/linked_list.c.o
+loader: CMakeFiles/loader.dir/src/loader/check_file.c.o
+loader: CMakeFiles/loader.dir/src/loader/open_file.c.o
+loader: CMakeFiles/loader.dir/src/loader/load_users.c.o
+loader: CMakeFiles/loader.dir/src/loader/load_teams.c.o
+loader: CMakeFiles/loader.dir/src/loader/load_threads.c.o
+loader: CMakeFiles/loader.dir/src/loader/load_channel.c.o
 loader: CMakeFiles/loader.dir/build.make
 loader: CMakeFiles/loader.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable loader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable loader"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/loader.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

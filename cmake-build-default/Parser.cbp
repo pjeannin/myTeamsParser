@@ -173,7 +173,7 @@
 		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/includes/linked_list.h">
 			<Option target="lists"/>
 		</Unit>
-		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/includes/user.h">
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/includes/loader.h">
 			<Option target="loader"/>
 		</Unit>
 		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/includes/writer.h">
@@ -191,7 +191,16 @@
 		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/lists/users_list.c">
 			<Option target="lists"/>
 		</Unit>
-		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/linked_list.c">
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/check_file.c">
+			<Option target="loader"/>
+		</Unit>
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_channel.c">
+			<Option target="loader"/>
+		</Unit>
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_teams.c">
+			<Option target="loader"/>
+		</Unit>
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_threads.c">
 			<Option target="loader"/>
 		</Unit>
 		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_users.c">
@@ -201,10 +210,16 @@
 			<Option target="writer"/>
 			<Option target="loader"/>
 		</Unit>
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/open_file.c">
+			<Option target="loader"/>
+		</Unit>
 		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/split_string.c">
 			<Option target="loader"/>
 		</Unit>
 		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/add_new.c">
+			<Option target="writer"/>
+		</Unit>
+		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/add_thread_reply.c">
 			<Option target="writer"/>
 		</Unit>
 		<Unit filename="/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/writer/check_file.c">

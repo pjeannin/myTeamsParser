@@ -4,9 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/linked_list.c" "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles/loader.dir/src/loader/linked_list.c.o"
+  "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/check_file.c" "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles/loader.dir/src/loader/check_file.c.o"
+  "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_channel.c" "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles/loader.dir/src/loader/load_channel.c.o"
+  "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_teams.c" "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles/loader.dir/src/loader/load_teams.c.o"
+  "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_threads.c" "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles/loader.dir/src/loader/load_threads.c.o"
   "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/load_users.c" "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles/loader.dir/src/loader/load_users.c.o"
   "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/main.c" "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles/loader.dir/src/loader/main.c.o"
+  "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/open_file.c" "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles/loader.dir/src/loader/open_file.c.o"
   "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/src/loader/split_string.c" "/Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default/CMakeFiles/loader.dir/src/loader/split_string.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

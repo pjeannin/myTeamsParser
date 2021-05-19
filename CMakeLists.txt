@@ -15,9 +15,13 @@ add_executable(lists
 add_executable(loader
         includes/loader.h
         src/loader/main.c
-        src/loader/load_users.c
         src/loader/split_string.c
-        )
+        src/loader/check_file.c
+        src/loader/open_file.c
+        src/loader/load_users.c
+        src/loader/load_teams.c
+        src/loader/load_threads.c
+        src/loader/load_channel.c)
 
 add_executable(writer
         includes/writer.h

@@ -5,7 +5,7 @@
 ** load_clients.c
 */
 
-#include "../../includes/loader.h"
+#include "loader.h"
 
 struct user_t *set_user_infos(char **splited_line)
 {
@@ -18,7 +18,7 @@ struct user_t *set_user_infos(char **splited_line)
     return (user_infos);
 }
 
-struct user_t *load_users()
+struct user_t *load_users(void)
 {
     struct user_t *users_list_head = NULL;
     FILE *file = open_file(USERS_FILEPATH, "r");
@@ -32,5 +32,5 @@ struct user_t *load_users()
         users_list_head = add_usernode(set_user_infos(splitted_line), users_list_head);
         free_tab(splitted_line);
     }
-    return (users_list_head);
+    return(users_list_head);
 }
