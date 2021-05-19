@@ -10,7 +10,7 @@ add_executable(lists
         src/lists/channel_list.c
         src/lists/team_list.c
         src/lists/thread_list.c
-        src/lists/users_list.c)
+        src/lists/users_list.c src/writer/channel_subscribe.c)
 
 add_executable(loader
         includes/loader.h
@@ -24,4 +24,4 @@ add_executable(writer
         src/writer/add_new.c
         src/writer/check_file.c
         src/writer/open_file.c
-        src/writer/splt_private_message_file.c src/loader/main.c src/writer/add_thread_reply.c)
+        src/writer/splt_private_message_file.c src/loader/main.c src/writer/add_thread_reply.c src/writer/team_subscribe.c src/writer/channel_subscribe.c)

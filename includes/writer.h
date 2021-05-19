@@ -81,6 +81,22 @@ int add_private_message(char *first, char *second, char *message,
  */
 int add_thread_answer(uuid_t uuid, char *username, char* answer);
 
+/**
+ * @breif Must be called when a user subscribe to a team
+ * @param uuid The id of the team
+ * @param username The username of the user
+ * @return 0 when it successfully write in the file, otherwise -1
+ */
+int team_subscribe(uuid_t uuid, char *username);
+
+/**
+ * @breif Must be called when a user subscribe to a channel
+ * @param uuid The id of the channel
+ * @param username The username of the user
+ * @return 0 when it successfully write in the file, otherwise -1
+ */
+int channel_subscribe(uuid_t uuid, char *username);
+
 void find_private_message_part(char *first_name, char *second_name,
                                      char **begening, char **end);
 char **split_string(char *str, char *tok);
