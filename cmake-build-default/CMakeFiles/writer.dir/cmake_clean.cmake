@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/writer.dir/src/loader/linked_list.c.o"
-  "CMakeFiles/writer.dir/src/loader/load_users.c.o"
-  "CMakeFiles/writer.dir/src/loader/split_string.c.o"
+  "CMakeFiles/writer.dir/src/loader/main.c.o"
   "CMakeFiles/writer.dir/src/writer/add_new.c.o"
   "CMakeFiles/writer.dir/src/writer/check_file.c.o"
   "CMakeFiles/writer.dir/src/writer/open_file.c.o"
