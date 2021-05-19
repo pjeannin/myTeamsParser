@@ -81,7 +81,11 @@ int add_private_message(char *first, char *second, char *message,
         return (-1);
     strftime(buf, 20, "%Y-%m-%d %H:%M:%S", localtime(&timestamp));
     buf[20] = '\0';
-    fprintf(file, "%s%s:%s\n%s\n%s", beg, first, message, buf, end);
+    fprintf(file, "%s", beg);
+    if (!strcmp(end, "")) {
+        fprintf(file, "\n\n%s-%s\n", first, second);
+    }
+    fprintf(file, "%s:%s\n%s\n%s", first, message, buf, end);
     fclose(file);
     free(beg);
     free(end);

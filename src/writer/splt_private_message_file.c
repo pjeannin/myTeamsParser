@@ -60,6 +60,7 @@ static void fill_file_content_var(char *file_begening, char *file_end, FILE *fil
     int right_conv = 0;
     size_t size;
 
+    file_end[0] = '\0';
     while (getline(&line, &size, file) != -1) {
         if (!strcmp(line, names_tab[0]) || !strcmp(line, names_tab[1]))
             right_conv = 1;
