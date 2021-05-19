@@ -7,7 +7,7 @@
 
 #include "loader.h"
 
-struct user_t *set_user_infos(char **splited_line)
+static struct user_t *set_user_infos(char **splited_line)
 {
     struct user_t *user_infos = malloc(sizeof(struct user_t));
 
