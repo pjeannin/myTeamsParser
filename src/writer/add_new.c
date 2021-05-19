@@ -70,12 +70,20 @@ int add_channel(char *title, uuid_t uuid, char *description, char *owner)
 int add_private_message(char *first, char *second, char *message,
                         time_t timestamp)
 {
-    char *beg = find_private_message_first_part(first, second);
-    FILE *file = open_file(PRIVATE_MESSAGE_PATH, "a");
+    char *beg = NULL;
+    char *end = NULL;
+    FILE *file = NULL;
+    char buf[21];
 
+    find_private_message_part(first, second, &beg, &end);
+    file = open_file(PRIVATE_MESSAGE_PATH, "w");
     if (file == (FILE *)-1)
         return (-1);
-    printf("%s", beg);
+    strftime(buf, 20, "%Y-%m-%d %H:%M:%S", localtime(&timestamp));
+    buf[20] = '\0';
+    fprintf(file, "%s%s:%s\n%s\n%s", beg, first, message, buf, end);
     fclose(file);
+    free(beg);
+    free(end);
     return (0);
 }

@@ -28,6 +28,7 @@ int add_team(char *title, uuid_t uuid, char *description, char *owner);
 int add_channel(char *title, uuid_t uuid, char *description, char *owner);
 int add_private_message(char *first, char *second, char *message,
                         time_t timestamp);
-char *find_private_message_first_part(char *first_name, char *seconde_name);
+void find_private_message_part(char *first_name, char *second_name,
+                                     char **begening, char **end);
 
 #endif //MYTEAMSPARSER_WRITER_H

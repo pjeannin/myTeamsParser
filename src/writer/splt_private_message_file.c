@@ -73,7 +73,8 @@ static void fill_file_content_var(char *file_begening, char *file_end, FILE *fil
     file_end[index] = '\0';
 }
 
-char *find_private_message_first_part(char *first_name, char *second_name)
+void find_private_message_part(char *first_name, char *second_name,
+                                     char **begening, char **end)
 {
     FILE *file = open_file(PRIVATE_MESSAGE_PATH, "r");
     char *file_begening = NULL;
@@ -83,13 +84,14 @@ char *find_private_message_first_part(char *first_name, char *second_name)
     struct stat st;
 
     if (file == (FILE *)-1)
-        return (NULL);
+        return;
     stat(PRIVATE_MESSAGE_PATH, &st);
     file_begening = malloc(sizeof(char) * st.st_size);
     file_end = malloc(sizeof(char) * st.st_size);
     fill_file_content_var(file_begening, file_end, file, names_tab);
     fclose(file);
-    return (file_begening);
+    *begening = file_begening;
+    *end = file_end;
 }
 
 /*68768767546534765356-myteams
