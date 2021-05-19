@@ -15,4 +15,4 @@ add_executable(writer
         includes/writer.h
         src/writer/check_file.c
         src/writer/open_file.c
-        src/writer/splt_private_message_file.c src/loader/main.c)
+        src/writer/splt_private_message_file.c src/loader/main.c src/writer/add_thread_reply.c)

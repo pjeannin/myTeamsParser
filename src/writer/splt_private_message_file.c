@@ -44,7 +44,7 @@ char *concat_str(char *str1, char *str2)
     return (res);
 }
 
-static void add_line_to_var(char *file_content, char *line, int *index)
+void add_line_to_var(char *file_content, char *line, int *index)
 {
     for (int i = 0; line[i]; ++i) {
         file_content[*(index) + i] = line[i];
@@ -68,6 +68,7 @@ static void fill_file_content_var(char *file_begening, char *file_end, FILE *fil
             end = 1;
             file_begening[index] = '\0';
             index = 0;
+            right_conv = 0;
         }
         add_line_to_var((end ? file_end : file_begening), line, &index);
     }

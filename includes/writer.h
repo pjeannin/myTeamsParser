@@ -72,7 +72,20 @@ int add_channel(char *title, uuid_t uuid, char *description, char *owner);
 int add_private_message(char *first, char *second, char *message,
                         time_t timestamp);
 
+/**
+ * @breif Must be called when a user answer to a thread
+ * @param uuid The id of the thread
+ * @param username The username of the person how answer
+ * @param answer The answer
+ * @return 0 when it successfully write in the file, otherwise -1
+ */
+int add_thread_answer(uuid_t uuid, char *username, char* answer);
+
 void find_private_message_part(char *first_name, char *second_name,
                                      char **begening, char **end);
+char **split_string(char *str, char *tok);
+void free_tab(char **tab);
+int tab_len(char **tab);
+void add_line_to_var(char *file_content, char *line, int *index);
 
 #endif //MYTEAMSPARSER_WRITER_H
