@@ -27,6 +27,7 @@ FILE *open_file(char *filepath, char *mode);
 ** @brief Must be called when you create a new user
 ** @param username The username of the new user
 ** @param uuid The id of the new user
+ * @return 0 when it successfully write in the file, otherwise -1
 **/
 int add_user(char *username, uuid_t uuid);
 
@@ -36,6 +37,7 @@ int add_user(char *username, uuid_t uuid);
 ** @param uuid The id of the new thread
  * @param owner The owner of the new thread
  * @param message The message of the new thread
+ * @return 0 when it successfully write in the file, otherwise -1
 **/
 int add_thread(char *title, uuid_t uuid, char *owner, char *message);
 
@@ -45,6 +47,7 @@ int add_thread(char *title, uuid_t uuid, char *owner, char *message);
 ** @param uuid The id of the new team
  * @param description The description of the new team
  * @param owner The owner of the new team
+ * @return 0 when it successfully write in the file, otherwise -1
 **/
 int add_team(char *title, uuid_t uuid, char *description, char *owner);
 
@@ -54,6 +57,7 @@ int add_team(char *title, uuid_t uuid, char *description, char *owner);
 ** @param uuid The id of the new channel
  * @param description The description of the new channel
  * @param owner The owner of the new channel
+ * @return 0 when it successfully write in the file, otherwise -1
 **/
 int add_channel(char *title, uuid_t uuid, char *description, char *owner);
 
@@ -63,6 +67,7 @@ int add_channel(char *title, uuid_t uuid, char *description, char *owner);
  * @param second The username of the person who receive the message
  * @param message The message
  * @param timestamp The timestamp of the message
+ * @return 0 when it successfully write in the file, otherwise -1
  */
 int add_private_message(char *first, char *second, char *message,
                         time_t timestamp);
