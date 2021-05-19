@@ -13,11 +13,11 @@ add_executable(lists
         src/lists/users_list.c)
 
 add_executable(loader
-        includes/user.h
+        includes/loader.h
         src/loader/main.c
         src/loader/load_users.c
         src/loader/split_string.c
-        src/loader/linked_list.c)
+        )
 
 add_executable(writer
         includes/writer.h

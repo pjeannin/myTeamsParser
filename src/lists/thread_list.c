@@ -5,7 +5,7 @@
 ** thread_list
 */
 
-#include "../includes/server.h"
+#include "../../includes/linked_list.h"
 
 struct thread_t *add_threadnode(struct thread_t *node, struct thread_t *list)
 {

@@ -8,7 +8,7 @@
 PROJECT	=	Loader
 NAME	=	../../loader
 
-SRCS	=	$(shell find ./ -name '*.c')
+SRCS	=	$(shell find ./ -name '*.c' && find ../lists -name '*.c')
 
 OBJS	=	$(SRCS:.c=.o)
 

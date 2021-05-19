@@ -5,7 +5,7 @@
 ** users_list
 */
 
-#include "../includes/server.h"
+#include "../../includes/linked_list.h"
 
 struct user_t *add_usernode(struct user_t *node, struct user_t *list)
 {

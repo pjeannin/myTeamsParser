@@ -5,49 +5,32 @@
 ** load_clients.c
 */
 
-#include "../../includes/user.h"
+#include "../../includes/loader.h"
 
-FILE *open_file(char *filepath, char *key)
+struct user_t *set_user_infos(char **splited_line)
 {
-    FILE *file = fopen(filepath, "r");
-    size_t size = 0;
-    char *line = NULL;
+    struct user_t *user_infos = malloc(sizeof(struct user_t));
 
-    if (!file)
-        return (NULL);
-    if (getline(&line, &size, file) == -1) {
-        fclose(file);
-        return (NULL);
-    }
-    if (strcmp(line, key) != 0) {
-        fclose(file);
-        return (NULL);
-    }
-    return (file);
-}
-
-user_infos_t *set_user_infos(char **splited_line)
-{
-    user_infos_t *user_infos = malloc(sizeof(user_infos_t));
-
-    user_infos->username = splited_line[0];
-    uuid_parse(splited_line[1], user_infos->uuid);
+    user_infos->username = strdup(splited_line[0]);
+    uuid_parse(splited_line[1], user_infos->id);
+    user_infos->next = NULL;
 
     return (user_infos);
 }
 
-linked_list_t *load_users()
+struct user_t *load_users()
 {
-    linked_list_t *users_list_head = malloc(sizeof (linked_list_t));
-    FILE *file = open_file(USERS_FILEPATH, KEY);
+    struct user_t *users_list_head = NULL;
+    FILE *file = open_file(USERS_FILEPATH, "r");
     size_t size = 0;
     char *line = NULL;
     char **splitted_line = NULL;
 
-    users_list_head->data = NULL;
-    users_list_head->next = NULL;
+    getline(&line, &size, file);
     while (getline(&line, &size, file) != -1) {
-        linked_list_add_elem(users_list_head, set_user_infos(split_string(line, ";\n")));
+        splitted_line = split_string(line, ";\n");
+        users_list_head = add_usernode(set_user_infos(splitted_line), users_list_head);
+        free_tab(splitted_line);
     }
     return (users_list_head);
 }

@@ -14,14 +14,17 @@
 #define USERS_FILEPATH  "savefiles/users.cache"
 #define KEY "68768767546534765356-myteams"
 
-typedef struct user_infos_s {
-    char *username;
-    uuid_t uuid;
-} user_infos_t;
-
-void linked_list_add_elem(linked_list_t *list_head, void *data);
 char **split_string(char *str, char *tok);
 void free_tab(char **tab);
 int tab_len(char **tab);
-u_int8_t *char_to_uuid(char *str);
+FILE *open_file(char *filepath, char *mode);
+int check_file(char *filepath);
+
+/**
+ * @brief Must be called when initializing the server in order to load saved
+ * users
+ * @return A linked list which contain all saved users
+ */
+struct user_t *load_users();
+
 #endif //PARSER_USER_H

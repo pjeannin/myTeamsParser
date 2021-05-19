@@ -5,7 +5,7 @@
 ** team_list
 */
 
-#include "../includes/server.h"
+#include "../../includes/linked_list.h"
 
 struct team_t *add_teamnode(struct team_t *node, struct team_t *list)
 {

@@ -5,7 +5,7 @@
 ** channel_list
 */
 
-#include "../includes/server.h"
+#include "../../includes/linked_list.h"
 
 struct channel_t *add_channelnode(struct channel_t *node, struct channel_t *list)
 {
