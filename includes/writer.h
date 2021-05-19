@@ -81,11 +81,44 @@ int add_private_message(char *first, char *second, char *message,
  */
 int add_thread_answer(uuid_t uuid, char *username, char* answer);
 
+/**
+ * @breif Must be called when a user subscribe to a team
+ * @param uuid The id of the team
+ * @param username The username of the user
+ * @return 0 when it successfully write in the file, otherwise -1
+ */
+int team_subscribe(uuid_t uuid, char *username);
+
+/**
+ * @breif Must be called when a user subscribe to a channel
+ * @param uuid The id of the channel
+ * @param username The username of the user
+ * @return 0 when it successfully write in the file, otherwise -1
+ */
+int channel_subscribe(uuid_t uuid, char *username);
+
+/**
+ * @breif Must be called juste after add_channel function in order to add it in
+ * the parent team
+ * @param uuid The id of the parent team
+ * @param name Teh name of the new channel
+ */
+void set_channel_parent(uuid_t uuid, char *name);
+
+/**
+ * @breif Must be called juste after add_thread function in order to add it in
+ * the parent channel
+ * @param uuid The id of the parent channel
+ * @param name Teh name of the new thread
+ */
+void set_thread_parent(uuid_t uuid, char *name);
+
 void find_private_message_part(char *first_name, char *second_name,
                                      char **begening, char **end);
 char **split_string(char *str, char *tok);
 void free_tab(char **tab);
 int tab_len(char **tab);
 void add_line_to_var(char *file_content, char *line, int *index);
+void add_thread_channel_to_upper(char *filepath, uuid_t uuid, char *name);
 
 #endif //MYTEAMSPARSER_WRITER_H
