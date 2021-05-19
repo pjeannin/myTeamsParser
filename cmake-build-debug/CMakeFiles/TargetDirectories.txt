@@ -1,3 +1,0 @@
-/Users/pierre/Documents/Epitech/Tek2/B4 - Network Programming/myTeamsParser/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/pierre/Documents/Epitech/Tek2/B4 - Network Programming/myTeamsParser/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/pierre/Documents/Epitech/Tek2/B4 - Network Programming/myTeamsParser/cmake-build-debug/CMakeFiles/parser.dir

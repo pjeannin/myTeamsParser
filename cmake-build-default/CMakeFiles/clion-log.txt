@@ -1,4 +1,0 @@
-"/Users/antonyftp/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/CLion.app/Contents/bin/cmake/mac/bin/cmake" -G "CodeBlocks - Unix Makefiles" /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/antonyftp/Documents/epitech-2.2nd-year/other/myTeamsParser/cmake-build-default
