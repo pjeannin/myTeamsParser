@@ -142,13 +142,147 @@ writer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/build
 .PHONY : writer/fast
 
+#=============================================================================
+# Target rules for targets named loader
+
+# Build rule for target.
+loader: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 loader
+.PHONY : loader
+
+# fast build rule for target.
+loader/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/build
+.PHONY : loader/fast
+
+#=============================================================================
+# Target rules for targets named lists
+
+# Build rule for target.
+lists: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lists
+.PHONY : lists
+
+# fast build rule for target.
+lists/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/build
+.PHONY : lists/fast
+
+src/lists/channel_list.o: src/lists/channel_list.c.o
+
+.PHONY : src/lists/channel_list.o
+
+# target to build an object file
+src/lists/channel_list.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/lists/channel_list.c.o
+.PHONY : src/lists/channel_list.c.o
+
+src/lists/channel_list.i: src/lists/channel_list.c.i
+
+.PHONY : src/lists/channel_list.i
+
+# target to preprocess a source file
+src/lists/channel_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/lists/channel_list.c.i
+.PHONY : src/lists/channel_list.c.i
+
+src/lists/channel_list.s: src/lists/channel_list.c.s
+
+.PHONY : src/lists/channel_list.s
+
+# target to generate assembly for a file
+src/lists/channel_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/lists/channel_list.c.s
+.PHONY : src/lists/channel_list.c.s
+
+src/lists/team_list.o: src/lists/team_list.c.o
+
+.PHONY : src/lists/team_list.o
+
+# target to build an object file
+src/lists/team_list.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/lists/team_list.c.o
+.PHONY : src/lists/team_list.c.o
+
+src/lists/team_list.i: src/lists/team_list.c.i
+
+.PHONY : src/lists/team_list.i
+
+# target to preprocess a source file
+src/lists/team_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/lists/team_list.c.i
+.PHONY : src/lists/team_list.c.i
+
+src/lists/team_list.s: src/lists/team_list.c.s
+
+.PHONY : src/lists/team_list.s
+
+# target to generate assembly for a file
+src/lists/team_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/lists/team_list.c.s
+.PHONY : src/lists/team_list.c.s
+
+src/lists/thread_list.o: src/lists/thread_list.c.o
+
+.PHONY : src/lists/thread_list.o
+
+# target to build an object file
+src/lists/thread_list.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/lists/thread_list.c.o
+.PHONY : src/lists/thread_list.c.o
+
+src/lists/thread_list.i: src/lists/thread_list.c.i
+
+.PHONY : src/lists/thread_list.i
+
+# target to preprocess a source file
+src/lists/thread_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/lists/thread_list.c.i
+.PHONY : src/lists/thread_list.c.i
+
+src/lists/thread_list.s: src/lists/thread_list.c.s
+
+.PHONY : src/lists/thread_list.s
+
+# target to generate assembly for a file
+src/lists/thread_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/lists/thread_list.c.s
+.PHONY : src/lists/thread_list.c.s
+
+src/lists/users_list.o: src/lists/users_list.c.o
+
+.PHONY : src/lists/users_list.o
+
+# target to build an object file
+src/lists/users_list.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/lists/users_list.c.o
+.PHONY : src/lists/users_list.c.o
+
+src/lists/users_list.i: src/lists/users_list.c.i
+
+.PHONY : src/lists/users_list.i
+
+# target to preprocess a source file
+src/lists/users_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/lists/users_list.c.i
+.PHONY : src/lists/users_list.c.i
+
+src/lists/users_list.s: src/lists/users_list.c.s
+
+.PHONY : src/lists/users_list.s
+
+# target to generate assembly for a file
+src/lists/users_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lists.dir/build.make CMakeFiles/lists.dir/src/lists/users_list.c.s
+.PHONY : src/lists/users_list.c.s
+
 src/loader/linked_list.o: src/loader/linked_list.c.o
 
 .PHONY : src/loader/linked_list.o
 
 # target to build an object file
 src/loader/linked_list.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/linked_list.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/linked_list.c.o
 .PHONY : src/loader/linked_list.c.o
 
 src/loader/linked_list.i: src/loader/linked_list.c.i
@@ -157,7 +291,7 @@ src/loader/linked_list.i: src/loader/linked_list.c.i
 
 # target to preprocess a source file
 src/loader/linked_list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/linked_list.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/linked_list.c.i
 .PHONY : src/loader/linked_list.c.i
 
 src/loader/linked_list.s: src/loader/linked_list.c.s
@@ -166,7 +300,7 @@ src/loader/linked_list.s: src/loader/linked_list.c.s
 
 # target to generate assembly for a file
 src/loader/linked_list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/linked_list.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/linked_list.c.s
 .PHONY : src/loader/linked_list.c.s
 
 src/loader/load_users.o: src/loader/load_users.c.o
@@ -175,7 +309,7 @@ src/loader/load_users.o: src/loader/load_users.c.o
 
 # target to build an object file
 src/loader/load_users.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/load_users.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/load_users.c.o
 .PHONY : src/loader/load_users.c.o
 
 src/loader/load_users.i: src/loader/load_users.c.i
@@ -184,7 +318,7 @@ src/loader/load_users.i: src/loader/load_users.c.i
 
 # target to preprocess a source file
 src/loader/load_users.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/load_users.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/load_users.c.i
 .PHONY : src/loader/load_users.c.i
 
 src/loader/load_users.s: src/loader/load_users.c.s
@@ -193,8 +327,38 @@ src/loader/load_users.s: src/loader/load_users.c.s
 
 # target to generate assembly for a file
 src/loader/load_users.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/load_users.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/load_users.c.s
 .PHONY : src/loader/load_users.c.s
+
+src/loader/main.o: src/loader/main.c.o
+
+.PHONY : src/loader/main.o
+
+# target to build an object file
+src/loader/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/main.c.o
+.PHONY : src/loader/main.c.o
+
+src/loader/main.i: src/loader/main.c.i
+
+.PHONY : src/loader/main.i
+
+# target to preprocess a source file
+src/loader/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/main.c.i
+.PHONY : src/loader/main.c.i
+
+src/loader/main.s: src/loader/main.c.s
+
+.PHONY : src/loader/main.s
+
+# target to generate assembly for a file
+src/loader/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/main.c.s
+.PHONY : src/loader/main.c.s
 
 src/loader/split_string.o: src/loader/split_string.c.o
 
@@ -202,7 +366,7 @@ src/loader/split_string.o: src/loader/split_string.c.o
 
 # target to build an object file
 src/loader/split_string.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/split_string.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/split_string.c.o
 .PHONY : src/loader/split_string.c.o
 
 src/loader/split_string.i: src/loader/split_string.c.i
@@ -211,7 +375,7 @@ src/loader/split_string.i: src/loader/split_string.c.i
 
 # target to preprocess a source file
 src/loader/split_string.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/split_string.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/split_string.c.i
 .PHONY : src/loader/split_string.c.i
 
 src/loader/split_string.s: src/loader/split_string.c.s
@@ -220,7 +384,7 @@ src/loader/split_string.s: src/loader/split_string.c.s
 
 # target to generate assembly for a file
 src/loader/split_string.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/loader/split_string.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loader.dir/build.make CMakeFiles/loader.dir/src/loader/split_string.c.s
 .PHONY : src/loader/split_string.c.s
 
 src/writer/add_new.o: src/writer/add_new.c.o
@@ -339,13 +503,30 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... lists"
+	@echo "... loader"
 	@echo "... writer"
+	@echo "... src/lists/channel_list.o"
+	@echo "... src/lists/channel_list.i"
+	@echo "... src/lists/channel_list.s"
+	@echo "... src/lists/team_list.o"
+	@echo "... src/lists/team_list.i"
+	@echo "... src/lists/team_list.s"
+	@echo "... src/lists/thread_list.o"
+	@echo "... src/lists/thread_list.i"
+	@echo "... src/lists/thread_list.s"
+	@echo "... src/lists/users_list.o"
+	@echo "... src/lists/users_list.i"
+	@echo "... src/lists/users_list.s"
 	@echo "... src/loader/linked_list.o"
 	@echo "... src/loader/linked_list.i"
 	@echo "... src/loader/linked_list.s"
 	@echo "... src/loader/load_users.o"
 	@echo "... src/loader/load_users.i"
 	@echo "... src/loader/load_users.s"
+	@echo "... src/loader/main.o"
+	@echo "... src/loader/main.i"
+	@echo "... src/loader/main.s"
 	@echo "... src/loader/split_string.o"
 	@echo "... src/loader/split_string.i"
 	@echo "... src/loader/split_string.s"
