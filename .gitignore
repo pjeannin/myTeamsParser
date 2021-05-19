@@ -6,3 +6,4 @@ src/writer/main.c
 cmake-build-debug
 cmake-build-default
 .idea
+*.gch
