@@ -28,4 +28,5 @@ add_executable(writer
         src/writer/add_new.c
         src/writer/check_file.c
         src/writer/open_file.c
-        src/writer/splt_private_message_file.c src/loader/main.c src/writer/add_thread_reply.c src/writer/team_subscribe.c src/writer/channel_subscribe.c src/writer/add_thread_channel_to_upper.c src/writer/set_parent.c src/writer/team_unsubscribe.c src/writer/channel_unsubscribe.c)
+        src/writer/split_string.c
+        src/writer/splt_private_message_file.c src/writer/add_thread_reply.c src/writer/team_subscribe.c src/writer/channel_subscribe.c src/writer/add_thread_channel_to_upper.c src/writer/set_parent.c src/writer/team_unsubscribe.c src/writer/channel_unsubscribe.c)
