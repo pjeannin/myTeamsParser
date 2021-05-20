@@ -7,57 +7,64 @@
 
 #include <uuid/uuid.h>
 #include <stddef.h>
+#include <stdlib.h>
 
-struct user_t {
-    uuid_t id;
+typedef struct linked_list_s {
+    void *data;
+    struct linked_list_s *next;
+} linked_list_t;
+
+typedef linked_list_t user_list_t;
+typedef linked_list_t message_list_t;
+typedef linked_list_t thread_list_t;
+typedef linked_list_t channel_list_t;
+typedef linked_list_t team_list_t;
+typedef  linked_list_t private_message_list_t;
+
+typedef struct user_s {
     char *username;
-    struct user_t *next;
-};
+    uuid_t id;
+} user_t;
 
-struct message_t {
-    struct user_t sender;
+typedef struct message_s {
+    user_t sender;
     char *message;
-};
+} message_t;
 
-struct thread_t {
+typedef struct thread_s {
     char *title;
-    struct user_t owner;
+    uuid_t id;
+    user_t owner;
     char *original_post;
-    struct message_t *message;
-    struct thread_t *next;
-    struct user_t *users;
-    uuid_t id;
-};
+    message_list_t *message;
+} thread_t;
 
-struct channel_t {
+typedef struct channel_s {
     char *title;
-    struct thread_t *threads;
-    struct user_t *users;
-    struct user_t *owner;
-    struct channel_t *next;
     uuid_t id;
-};
+    char *description;
+    thread_list_t *threads;
+} channel_t;
 
-struct team_t {
+typedef struct team_s {
     char *title;
-    struct channel_t *channels;
-    struct user_t *users;
-    struct team_t *next;
     uuid_t id;
-};
+    char *description;
+    user_t owner;
+    user_list_t *users;
+    channel_list_t *channels;
+} team_t;
 
-struct team_t *add_teamnode(struct team_t *node, struct team_t *list);
-struct team_t *remove_teamnode(uuid_t searched, struct team_t *list);
-struct team_t *find_teamnode(uuid_t searched, struct team_t *list);
-struct channel_t *add_channelnode(struct channel_t *node, struct channel_t *list);
-struct channel_t *remove_channelnode(uuid_t searched, struct channel_t *list);
-struct channel_t *find_channelnode(uuid_t searched, struct channel_t *list);
-struct thread_t *add_threadnode(struct thread_t *node, struct thread_t *list);
-struct thread_t *remove_threadnode(uuid_t searched, struct thread_t *list);
-struct thread_t *find_threadnode(uuid_t searched, struct thread_t *list);
-struct user_t *add_usernode(struct user_t *node, struct user_t *list);
-struct user_t *remove_usernode(uuid_t searched, struct user_t *list);
-struct user_t *find_usernode(uuid_t searched, struct user_t *list);
-struct user_t *find_usernodebyname(char *searched, struct user_t *list);
+typedef struct private_message_s {
+    user_t first_user:
+    user_t second_user;
+    message_list_t *message_list;
+} private_message_t;
+
+linked_list_t *add_node(linked_list_t *list_head, void *data);
+void *find_user_by_uuid(linked_list_t *list_head, uuid_t uuid);
+void *find_thread_by_uuid(linked_list_t *list_head, uuid_t uuid);
+void *find_channel_by_uuid(linked_list_t *list_head, uuid_t uuid);
+void *find_team_by_uuid(linked_list_t *list_head, uuid_t uuid);
 
 #endif //MYTEAMSPARSER_LINKED_LIST_H
