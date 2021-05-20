@@ -98,6 +98,22 @@ int team_subscribe(uuid_t uuid, char *username);
 int channel_subscribe(uuid_t uuid, char *username);
 
 /**
+ * @breif Must be called when a user unsubscribe to a team
+ * @param uuid The id of the team
+ * @param username The username of the user
+ * @return 0 when it successfully write in the file, otherwise -1
+ */
+int team_unsubscribe(uuid_t uuid, char *username);
+
+/**
+ * @breif Must be called when a user unsubscribe to a channel
+ * @param uuid The id of the channel
+ * @param username The username of the user
+ * @return 0 when it successfully write in the file, otherwise -1
+ */
+int channel_unsubscribe(uuid_t uuid, char *username);
+
+/**
  * @breif Must be called juste after add_channel function in order to add it in
  * the parent team
  * @param uuid The id of the parent team
