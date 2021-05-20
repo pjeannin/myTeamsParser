@@ -8,15 +8,29 @@
 #include <uuid/uuid.h>
 #include <stddef.h>
 
+struct user_t {
+    uuid_t id;
+    char *username;
+    struct user_t *next;
+};
+
+struct message_t {
+    struct user_t sender;
+    char *message;
+};
+
 struct thread_t {
+    char *title;
+    struct user_t owner;
     char *original_post;
-    char **answers;
+    struct message_t *message;
     struct thread_t *next;
     struct user_t *users;
     uuid_t id;
 };
 
 struct channel_t {
+    char *title;
     struct thread_t *threads;
     struct user_t *users;
     struct user_t *owner;
@@ -25,16 +39,11 @@ struct channel_t {
 };
 
 struct team_t {
+    char *title;
     struct channel_t *channels;
     struct user_t *users;
     struct team_t *next;
     uuid_t id;
-};
-
-struct user_t {
-    uuid_t id;
-    char *username;
-    struct user_t *next;
 };
 
 struct team_t *add_teamnode(struct team_t *node, struct team_t *list);

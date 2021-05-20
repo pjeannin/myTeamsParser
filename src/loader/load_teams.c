@@ -19,7 +19,7 @@ static struct team_t *set_team_infos(char **splited_line)
 struct team_t *load_teams(void)
 {
     struct team_t *team_list_head = NULL;
-    FILE *file = open_file(USERS_FILEPATH, "r");
+    FILE *file = open_file(TEAMS_FILEPATH, "r");
     size_t size = 0;
     char *line = NULL;
     char **splitted_line = NULL;
