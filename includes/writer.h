@@ -117,17 +117,17 @@ int channel_unsubscribe(uuid_t uuid, char *username);
  * @breif Must be called juste after add_channel function in order to add it in
  * the parent team
  * @param uuid The id of the parent team
- * @param name Teh name of the new channel
+ * @param channel_uuid The id of the new channel
  */
-void set_channel_parent(uuid_t uuid, char *name);
+void set_channel_parent(uuid_t uuid, uuid_t channel_uuid);
 
 /**
  * @breif Must be called juste after add_thread function in order to add it in
  * the parent channel
  * @param uuid The id of the parent channel
- * @param name Teh name of the new thread
+ * @param thread_uuid The id of the new thread
  */
-void set_thread_parent(uuid_t uuid, char *name);
+void set_thread_parent(uuid_t uuid, uuid_t thread_uuid);
 
 void find_private_message_part(char *first_name, char *second_name,
                                      char **begening, char **end);
@@ -135,6 +135,6 @@ char **split_string(char *str, char *tok);
 void free_tab(char **tab);
 int tab_len(char **tab);
 void add_line_to_var(char *file_content, char *line, int *index);
-void add_thread_channel_to_upper(char *filepath, uuid_t uuid, char *name);
+void add_thread_channel_to_upper(char *filepath, uuid_t uuid, uuid_t child_uuid);
 
 #endif //MYTEAMSPARSER_WRITER_H

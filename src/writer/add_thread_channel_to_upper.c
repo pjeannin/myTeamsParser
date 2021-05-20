@@ -60,21 +60,25 @@ static void find_file_parts(char **beg, char **end, char *uuid, char *filepath)
     *end = file_end;
 }
 
-void add_thread_channel_to_upper(char *filepath, uuid_t uuid, char *name)
+void add_thread_channel_to_upper(char *filepath, uuid_t uuid, uuid_t child_uuid)
 {
     char *beg = NULL;
     char *end = NULL;
     FILE *file = NULL;
     char *char_uuid;
+    char *char_child_uuid;
 
     char_uuid = malloc(sizeof(char) * 37);
     uuid_unparse_upper(uuid, char_uuid);
+    char_child_uuid = malloc(sizeof(char) * 37);
+    uuid_unparse_upper(child_uuid, char_child_uuid);
     find_file_parts(&beg, &end, char_uuid, filepath);
     file = open_file(filepath, "w");
     if (file == (FILE *)-1)
         return;
-    fprintf(file, "%s%s%s", beg, name, end);
+    fprintf(file, "%s%s%s", beg, char_child_uuid, end);
     free(char_uuid);
+    free(char_child_uuid);
     free(end);
     free(beg);
     fclose(file);

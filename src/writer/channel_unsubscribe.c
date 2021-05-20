@@ -57,7 +57,7 @@ static void find_file_parts(char **beg, char *uuid, char *username)
 
     if (file == (FILE *)-1)
         return;
-    stat(CHANNELPATH, &st);
+    stat(CHANNEL_PATH, &st);
     file_begening = malloc(sizeof(char) * st.st_size);
     fill_var(file_begening, file, uuid, username);
     fclose(file);
