@@ -1,11 +1,21 @@
 /*
-** EPITECH PROJECT, 2021
-** Project
+** EPITECH PROJECT, 2024
+** Parser
 ** File description:
-** check_file.c
+** Created by antonyftp
 */
 
-#include "../../includes/loader.h"
+#include "loader.h"
+
+FILE *open_file(char *filepath, char *mode)
+{
+    if (check_file(filepath) == -1)
+        return ((FILE *)-1);
+    FILE *file = fopen(filepath, mode);
+    if (!file)
+        return ((FILE *)-1);
+    return (file);
+}
 
 int check_file(char *filepath)
 {
