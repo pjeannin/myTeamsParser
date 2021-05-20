@@ -62,9 +62,9 @@ typedef struct private_message_s {
 } private_message_t;
 
 linked_list_t *add_node(linked_list_t *list_head, void *data);
-void *find_user_by_uuid(linked_list_t *list_head, uuid_t uuid);
-void *find_thread_by_uuid(linked_list_t *list_head, uuid_t uuid);
-void *find_channel_by_uuid(linked_list_t *list_head, uuid_t uuid);
-void *find_team_by_uuid(linked_list_t *list_head, uuid_t uuid);
+void *find_user_by_uuid(user_list_t *list_head, uuid_t uuid);
+void *find_thread_by_uuid(thread_list_t *list_head, uuid_t uuid);
+void *find_channel_by_uuid(channel_list_t *list_head, uuid_t uuid);
+void *find_team_by_uuid(team_list_t *list_head, uuid_t uuid);
 
 #endif //MYTEAMSPARSER_LINKED_LIST_H

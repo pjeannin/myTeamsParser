@@ -7,9 +7,9 @@
 
 #include "../../includes/linked_list.h"
 
-void *find_user_by_uuid(linked_list_t *list_head, uuid_t uuid)
+void *find_user_by_uuid(user_list_t *list_head, uuid_t uuid)
 {
-    linked_list_t *tmp = list_head;
+    user_list_t *tmp = list_head;
 
     if (!tmp)
         return (NULL);
@@ -20,9 +20,9 @@ void *find_user_by_uuid(linked_list_t *list_head, uuid_t uuid)
     return (NULL);
 }
 
-void *find_thread_by_uuid(linked_list_t *list_head, uuid_t uuid)
+void *find_thread_by_uuid(thread_list_t *list_head, uuid_t uuid)
 {
-    linked_list_t *tmp = list_head;
+    thread_list_t *tmp = list_head;
 
     if (!tmp)
         return (NULL);
@@ -33,9 +33,9 @@ void *find_thread_by_uuid(linked_list_t *list_head, uuid_t uuid)
     return (NULL);
 }
 
-void *find_channel_by_uuid(linked_list_t *list_head, uuid_t uuid)
+void *find_channel_by_uuid(channel_list_t *list_head, uuid_t uuid)
 {
-    linked_list_t *tmp = list_head;
+    channel_list_t *tmp = list_head;
 
     if (!tmp)
         return (NULL);
@@ -46,9 +46,9 @@ void *find_channel_by_uuid(linked_list_t *list_head, uuid_t uuid)
     return (NULL);
 }
 
-void *find_team_by_uuid(linked_list_t *list_head, uuid_t uuid)
+void *find_team_by_uuid(team_list_t *list_head, uuid_t uuid)
 {
-    linked_list_t *tmp = list_head;
+    team_list_t *tmp = list_head;
 
     if (!tmp)
         return (NULL);
