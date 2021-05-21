@@ -52,7 +52,7 @@ int add_team(char *title, uuid_t uuid, char *description, char *owner)
     return (0);
 }
 
-int add_channel(char *title, uuid_t uuid, char *description, char *owner)
+int add_channel(char *title, uuid_t uuid, char *description)
 {
     FILE *file = open_file(CHANNEL_PATH, "a");
     char *char_uuid;
@@ -61,7 +61,7 @@ int add_channel(char *title, uuid_t uuid, char *description, char *owner)
         return (-1);
     char_uuid = malloc(sizeof(char) * 37);
     uuid_unparse_upper(uuid, char_uuid);
-    fprintf(file, "\n%s;%s;%s;%s;", title, char_uuid, description, owner);
+    fprintf(file, "\n%s;%s;%s;", title, char_uuid, description);
     fclose(file);
     free(char_uuid);
     return (0);
