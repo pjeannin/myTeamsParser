@@ -19,7 +19,7 @@ typedef linked_list_t message_list_t;
 typedef linked_list_t thread_list_t;
 typedef linked_list_t channel_list_t;
 typedef linked_list_t team_list_t;
-typedef  linked_list_t private_message_list_t;
+typedef linked_list_t private_message_list_t;
 
 typedef struct user_s {
     char *username;

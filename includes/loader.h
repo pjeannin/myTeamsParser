@@ -29,27 +29,27 @@ int check_file(char *filepath);
  * users
  * @return A linked list which contain all saved users
  */
-struct user_t *load_users(void);
+user_list_t *load_users(void);
 
 /**
  * @brief Must be called when initializing the server in order to load saved
  * teams
  * @return A linked list which contain all saved teams
  */
-struct team_t *load_teams(void);
+team_list_t *load_teams(void);
 
 /**
  * @brief Must be called when initializing the server in order to load saved
  * threads
  * @return A linked list which contain all saved threads
  */
-struct thread_t *load_thread(void);
+thread_list_t *load_thread(void);
 
 /**
  * @brief Must be called when initializing the server in order to load saved
  * channels
  * @return A linked list which contain all saved channels
  */
-struct channel_t *load_channel(void);
+channel_list_t *load_channel(void);
 
 #endif //PARSER_USER_H

@@ -7,18 +7,17 @@
 
 #include "loader.h"
 
-static struct team_t *set_team_infos(char **splited_line)
+static team_t *set_team_infos(char **splited_line)
 {
-    struct team_t *teams_infos = malloc(sizeof(struct user_t));
+    team_t *teams_infos = malloc(sizeof(team_t));
 
     uuid_parse(splited_line[1], teams_infos->id);
-    teams_infos->next = NULL;
     return (teams_infos);
 }
 
-struct team_t *load_teams(void)
+team_list_t *load_teams(void)
 {
-    struct team_t *team_list_head = NULL;
+    team_list_t *team_list_head = NULL;
     FILE *file = open_file(TEAMS_FILEPATH, "r");
     size_t size = 0;
     char *line = NULL;
@@ -27,7 +26,7 @@ struct team_t *load_teams(void)
     getline(&line, &size, file);
     while (getline(&line, &size, file) != -1) {
         splitted_line = split_string(line, ";\n");
-        team_list_head = add_teamnode(set_team_infos(splitted_line), team_list_head);
+        team_list_head = add_node(team_list_head, set_team_infos(splitted_line));
     }
 
     return (team_list_head);

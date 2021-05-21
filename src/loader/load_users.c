@@ -7,20 +7,19 @@
 
 #include "loader.h"
 
-static struct user_t *set_user_infos(char **splited_line)
+static user_t *set_user_infos(char **splited_line)
 {
-    struct user_t *user_infos = malloc(sizeof(struct user_t));
+    user_t *user_infos = malloc(sizeof(user_t));
 
     user_infos->username = strdup(splited_line[0]);
     uuid_parse(splited_line[1], user_infos->id);
-    user_infos->next = NULL;
 
     return (user_infos);
 }
 
-struct user_t *load_users(void)
+user_list_t *load_users(void)
 {
-    struct user_t *users_list_head = NULL;
+    user_list_t *users_list_head = NULL;
     FILE *file = open_file(USERS_FILEPATH, "r");
     size_t size = 0;
     char *line = NULL;
@@ -29,7 +28,7 @@ struct user_t *load_users(void)
     getline(&line, &size, file);
     while (getline(&line, &size, file) != -1) {
         splitted_line = split_string(line, ";\n");
-        users_list_head = add_usernode(set_user_infos(splitted_line), users_list_head);
+        users_list_head = add_node(users_list_head, set_user_infos(splitted_line));
         free_tab(splitted_line);
     }
     return(users_list_head);

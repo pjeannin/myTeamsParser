@@ -7,9 +7,9 @@
 
 #include "loader.h"
 
-struct channel_t *load_channel(void)
+channel_list_t *load_channel(void)
 {
-    struct channel_t *channel_list_head = NULL;
+    channel_list_t *channel_list_head = NULL;
 
     return(channel_list_head);
 }
