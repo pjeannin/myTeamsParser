@@ -56,7 +56,7 @@ typedef struct team_s {
 } team_t;
 
 typedef struct private_message_s {
-    user_t first_user:
+    user_t first_user;
     user_t second_user;
     message_list_t *message_list;
 } private_message_t;
