@@ -59,7 +59,7 @@ int add_team(char *title, uuid_t uuid, char *description, char *owner);
  * @param owner The owner of the new channel
  * @return 0 when it successfully write in the file, otherwise -1
 **/
-int add_channel(char *title, uuid_t uuid, char *description, char *owner);
+int add_channel(char *title, uuid_t uuid, char *description);
 
 /**
  * @brief Must be called when a user send a private message
