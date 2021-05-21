@@ -56,15 +56,24 @@ typedef struct team_s {
 } team_t;
 
 typedef struct private_message_s {
-    user_t first_user;
-    user_t second_user;
+    user_t *first_user;
+    user_t *second_user;
     message_list_t *message_list;
 } private_message_t;
 
 linked_list_t *add_node(linked_list_t *list_head, void *data);
-void *find_user_by_uuid(user_list_t *list_head, uuid_t uuid);
-void *find_thread_by_uuid(thread_list_t *list_head, uuid_t uuid);
-void *find_channel_by_uuid(channel_list_t *list_head, uuid_t uuid);
-void *find_team_by_uuid(team_list_t *list_head, uuid_t uuid);
+user_t *find_user_by_uuid(user_list_t *list_head, uuid_t uuid);
+thread_t *find_thread_by_uuid(thread_list_t *list_head, uuid_t uuid);
+channel_t *find_channel_by_uuid(channel_list_t *list_head, uuid_t uuid);
+team_t *find_team_by_uuid(team_list_t *list_head, uuid_t uuid);
+user_t *find_user_by_name(user_list_t *list_head, char *name);
+thread_t *find_thread_by_title(thread_list_t *list_head, char *title);
+channel_t *find_channel_by_title(channel_list_t *list_head, char *title);
+team_t *find_team_by_title(team_list_t *list_head, char *title);
+int linked_list_len(linked_list_t *list_head);
+linked_list_t *remove_node(linked_list_t *list_head, void *node);
+private_message_t *find_private_message(private_message_list_t *list_head,
+                                        uuid_t first_sender,
+                                        uuid_t second_sender);
 
 #endif //MYTEAMSPARSER_LINKED_LIST_H

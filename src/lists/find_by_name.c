@@ -2,58 +2,58 @@
 ** EPITECH PROJECT, 2021
 ** Project
 ** File description:
-** find_by_uuid.c
+** find_by_name.c
 */
 
 #include "../../includes/linked_list.h"
 
-user_t *find_user_by_uuid(user_list_t *list_head, uuid_t uuid)
+user_t *find_user_by_name(user_list_t *list_head, char *name)
 {
     user_list_t *tmp = list_head;
 
     if (!tmp)
         return (NULL);
     for (; tmp->next; tmp = tmp->next) {
-        if (!uuid_compare(uuid, ((user_t *)tmp->data)->id))
+        if (!strcmp(name, ((user_t *)tmp->data)->username))
             return ((user_t *)data);
     }
     return (NULL);
 }
 
-thraed_t *find_thread_by_uuid(thread_list_t *list_head, uuid_t uuid)
+thraed_t *find_thread_by_title(thread_list_t *list_head, char *title)
 {
     thread_list_t *tmp = list_head;
 
     if (!tmp)
         return (NULL);
     for (; tmp->next; tmp = tmp->next) {
-        if (!uuid_compare(uuid, ((thread_t *)tmp->data)->id))
+        if (!strcmp(title, ((thread_t *)tmp->data)->title))
             return ((thread_t *)data);
     }
     return (NULL);
 }
 
-channel_t *find_channel_by_uuid(channel_list_t *list_head, uuid_t uuid)
+channel_t *find_channel_by_title(channel_list_t *list_head, char *title)
 {
     channel_list_t *tmp = list_head;
 
     if (!tmp)
         return (NULL);
     for (; tmp->next; tmp = tmp->next) {
-        if (!uuid_compare(uuid, ((channel_t *)tmp->data)->id))
+        if (!strcmp(uuid, ((channel_t *)tmp->data)->title))
             return ((channel_t *)data);
     }
     return (NULL);
 }
 
-team_t *find_team_by_uuid(team_list_t *list_head, uuid_t uuid)
+team_t *find_team_by_title(team_list_t *list_head, char *title)
 {
     team_list_t *tmp = list_head;
 
     if (!tmp)
         return (NULL);
     for (; tmp->next; tmp = tmp->next) {
-        if (!uuid_compare(uuid, ((team_t *)tmp->data)->id))
+        if (!strcmp(uuid, ((team_t *)tmp->data)->title))
             return ((team_t *)data);
     }
     return (NULL);

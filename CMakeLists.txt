@@ -10,7 +10,7 @@ add_executable(lists
         src/lists/channel_list.c
         src/lists/team_list.c
         src/lists/thread_list.c
-        src/lists/users_list.c src/writer/channel_subscribe.c src/writer/add_thread_channel_to_upper.c src/writer/set_parent.c src/writer/team_unsubscribe.c src/writer/channel_unsubscribe.c src/lists/linked_list.c src/lists/find_by_uuid.c)
+        src/lists/users_list.c src/writer/channel_subscribe.c src/writer/add_thread_channel_to_upper.c src/writer/set_parent.c src/writer/team_unsubscribe.c src/writer/channel_unsubscribe.c src/lists/linked_list.c src/lists/find_by_uuid.c src/lists/find_by_name.c src/lists/remove.c src/lists/list_len.c src/lists/find_private_message.c)
 
 add_executable(loader
         includes/loader.h
