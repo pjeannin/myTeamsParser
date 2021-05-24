@@ -16,6 +16,7 @@
 #define TEAMS_FILEPATH "savefiles/teams.cache"
 #define THREADS_FILEPATH "savefiles/threads.cache"
 #define CHANNELS_FILEPATH "savefiles/channels.cache"
+#define PRIVATEMESSAGES_FILEPATH "savefiles/privatemessages.cache"
 #define KEY "68768767546534765356-myteams"
 
 char **split_string(char *str, char *tok);
@@ -51,5 +52,12 @@ thread_list_t *load_thread(user_list_t *users);
  * @return A linked list which contain all saved channels
  */
 channel_list_t *load_channel(thread_list_t *thread);
+
+/**
+ * @brief Must be called when initializing the server in order to load saved
+ * channels
+ * @return A linked list which contain all saved private messages
+ */
+private_message_list_t *load_privatemessages(user_list_t *users);
 
 #endif //PARSER_USER_H
