@@ -12,6 +12,7 @@ static void set_answer_infos(char *owner, thread_t *thread, user_list_t *users, 
     message_t *message = malloc(sizeof(message_t));
 
     for (; *new_line != ','; ++new_line);
+    new_line[strlen(new_line) - 1] = '\0';
     ++new_line;
     message->sender = find_user_by_name(users, owner);
     message->message = strdup(new_line);
