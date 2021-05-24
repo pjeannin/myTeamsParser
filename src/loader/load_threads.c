@@ -44,12 +44,13 @@ thread_list_t *load_thread(user_list_t *users)
     while (getline(&line, &size, file) != -1) {
         splitted_thread = split_string(line, ";\n");
         thread_list_head = add_node(thread_list_head, set_thread_infos(splitted_thread, users));
-        ((thread_t *)thread_list_head->data)->message = NULL;
+        uuid_parse(splitted_thread[1], tmp);
+        thread_t *current_thread = find_thread_by_uuid(thread_list_head, tmp);
+        current_thread->message = NULL;
         for (int index = 0; getline(&line, &size, file) != -1 && strcmp(line, "\n") != 0; index++) {
             new_line = strdup(line);
             splitted_answer = split_string(line, ",\n");
-            uuid_parse(splitted_thread[1], tmp);
-            set_answer_infos(splitted_answer[0], find_thread_by_uuid(thread_list_head, tmp), users, new_line);
+            set_answer_infos(splitted_answer[0], current_thread, users, new_line);
             free_tab(splitted_answer);
         }
         free_tab(splitted_thread);

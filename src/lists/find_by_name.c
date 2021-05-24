@@ -13,7 +13,7 @@ user_t *find_user_by_name(user_list_t *list_head, char *name)
 
     if (!tmp)
         return (NULL);
-    for (; tmp->next; tmp = tmp->next) {
+    for (; tmp; tmp = tmp->next) {
         if (!strcmp(name, ((user_t *)tmp->data)->username))
             return ((user_t *)tmp->data);
     }
@@ -26,7 +26,7 @@ thread_t *find_thread_by_title(thread_list_t *list_head, char *title)
 
     if (!tmp)
         return (NULL);
-    for (; tmp->next; tmp = tmp->next) {
+    for (; tmp; tmp = tmp->next) {
         if (!strcmp(title, ((thread_t *)tmp->data)->title))
             return ((thread_t *)tmp->data);
     }
@@ -39,7 +39,7 @@ channel_t *find_channel_by_title(channel_list_t *list_head, char *title)
 
     if (!tmp)
         return (NULL);
-    for (; tmp->next; tmp = tmp->next) {
+    for (; tmp; tmp = tmp->next) {
         if (!strcmp(title, ((channel_t *)tmp->data)->title))
             return ((channel_t *)tmp->data);
     }
@@ -52,7 +52,7 @@ team_t *find_team_by_title(team_list_t *list_head, char *title)
 
     if (!tmp)
         return (NULL);
-    for (; tmp->next; tmp = tmp->next) {
+    for (; tmp; tmp = tmp->next) {
         if (!strcmp(title, ((team_t *)tmp->data)->title))
             return ((team_t *)tmp->data);
     }

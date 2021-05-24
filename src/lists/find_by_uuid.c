@@ -13,7 +13,7 @@ user_t *find_user_by_uuid(user_list_t *list_head, uuid_t uuid)
 
     if (!tmp)
         return (NULL);
-    for (; tmp->next; tmp = tmp->next) {
+    for (; tmp; tmp = tmp->next) {
         if (!uuid_compare(uuid, ((user_t *)tmp->data)->id))
             return ((user_t *)tmp->data);
     }
@@ -26,7 +26,7 @@ thread_t *find_thread_by_uuid(thread_list_t *list_head, uuid_t uuid)
 
     if (!tmp)
         return (NULL);
-    for (; tmp->next; tmp = tmp->next) {
+    for (; tmp; tmp = tmp->next) {
         if (!uuid_compare(uuid, ((thread_t *)tmp->data)->id))
             return ((thread_t *)tmp->data);
     }
@@ -39,7 +39,7 @@ channel_t *find_channel_by_uuid(channel_list_t *list_head, uuid_t uuid)
 
     if (!tmp)
         return (NULL);
-    for (; tmp->next; tmp = tmp->next) {
+    for (; tmp; tmp = tmp->next) {
         if (!uuid_compare(uuid, ((channel_t *)tmp->data)->id))
             return ((channel_t *)tmp->data);
     }
@@ -52,7 +52,7 @@ team_t *find_team_by_uuid(team_list_t *list_head, uuid_t uuid)
 
     if (!tmp)
         return (NULL);
-    for (; tmp->next; tmp = tmp->next) {
+    for (; tmp; tmp = tmp->next) {
         if (!uuid_compare(uuid, ((team_t *)tmp->data)->id))
             return ((team_t *)tmp->data);
     }
