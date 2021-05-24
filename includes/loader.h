@@ -50,6 +50,6 @@ thread_list_t *load_thread(user_list_t *users);
  * channels
  * @return A linked list which contain all saved channels
  */
-channel_list_t *load_channel(void);
+channel_list_t *load_channel(thread_list_t *thread);
 
 #endif //PARSER_USER_H

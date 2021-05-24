@@ -8,6 +8,7 @@
 #include <uuid/uuid.h>
 #include <stddef.h>
 #include <stdlib.h>
+#include <string.h>
 
 typedef struct linked_list_s {
     void *data;

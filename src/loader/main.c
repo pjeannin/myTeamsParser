@@ -10,14 +10,19 @@
 int main()
 {
     user_list_t *users = load_users();
-    printf("User :\n");
+    printf("----- User : -----\n");
     printf("%s\n", ((user_t *)users->next->next->data)->username);
     thread_list_t *thread = load_thread(users);
-    printf("Thread :\n");
+    printf("----- Thread : -----\n");
     printf("%s\n", ((thread_t *)thread->data)->title);
     printf("%s\n", ((thread_t *)thread->data)->owner->username);
     printf("%s\n", ((thread_t *)thread->data)->original_post);
     printf("%s\n", ((message_t *)((thread_t *)thread->data)->message->data)->sender->username);
     printf("%s\n", ((message_t *)((thread_t *)thread->data)->message->data)->message);
+    channel_list_t *channel = load_channel(thread);
+    printf("----- Channel : -----\n");
+    printf("%s\n", ((channel_t *)channel->data)->title);
+    printf("%s\n", ((channel_t *)channel->data)->description);
+    printf("%s\n", ((thread_t *)((channel_t *)channel->data)->threads->data)->title);
     return (0);
 }

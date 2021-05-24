@@ -56,6 +56,7 @@ thread_list_t *load_thread(user_list_t *users)
         }
         free_tab(splitted_thread);
     }
-
+    free(line);
+    fclose(file);
     return(thread_list_head);
 }

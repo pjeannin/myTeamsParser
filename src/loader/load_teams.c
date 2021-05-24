@@ -28,6 +28,7 @@ team_list_t *load_teams(void)
         splitted_line = split_string(line, ";\n");
         team_list_head = add_node(team_list_head, set_team_infos(splitted_line));
     }
-
+    free(line);
+    fclose(file);
     return (team_list_head);
 }

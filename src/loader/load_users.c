@@ -31,5 +31,7 @@ user_list_t *load_users(void)
         users_list_head = add_node(users_list_head, set_user_infos(splitted_line));
         free_tab(splitted_line);
     }
+    free(line);
+    fclose(file);
     return(users_list_head);
 }

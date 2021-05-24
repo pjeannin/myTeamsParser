@@ -14,7 +14,7 @@ OBJS	=	$(SRCS:.c=.o)
 
 
 CFLAGS	+=	-I../../includes/
-CFLAGS	+=	-g3 -O2
+CFLAGS	+=	-g3
 
 LDFLAGS	+= -luuid
 
