@@ -6,6 +6,3 @@ cmake-build-debug
 cmake-build-default
 .idea
 *.gch
-
-loader
-writer
