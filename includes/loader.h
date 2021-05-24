@@ -36,7 +36,7 @@ user_list_t *load_users(void);
  * teams
  * @return A linked list which contain all saved teams
  */
-team_list_t *load_teams(void);
+team_list_t *load_teams(user_list_t *users, channel_list_t *channels);
 
 /**
  * @brief Must be called when initializing the server in order to load saved

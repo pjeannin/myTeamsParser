@@ -24,5 +24,12 @@ int main()
     printf("%s\n", ((channel_t *)channel->data)->title);
     printf("%s\n", ((channel_t *)channel->data)->description);
     printf("%s\n", ((thread_t *)((channel_t *)channel->data)->threads->data)->title);
+    team_list_t *team = load_teams(users, channel);
+    printf("----- Teams : -----\n");
+    printf("%s\n", ((team_t *)team->data)->title);
+    printf("%s\n", ((team_t *)team->data)->description);
+    printf("%s\n", ((user_t *)((team_t *)team->data)->owner)->username);
+    printf("%s\n", ((user_t *)((team_t *)team->data)->users->data)->username);
+    printf("%s\n", ((channel_t *)((team_t *)team->data)->channels->data)->title);
     return (0);
 }
