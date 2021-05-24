@@ -9,6 +9,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 typedef struct linked_list_s {
     void *data;
@@ -25,11 +26,13 @@ typedef linked_list_t private_message_list_t;
 typedef struct user_s {
     char *username;
     uuid_t id;
+    time_t timestamp;
 } user_t;
 
 typedef struct message_s {
     user_t *sender;
     char *message;
+
 } message_t;
 
 typedef struct thread_s {
@@ -38,6 +41,7 @@ typedef struct thread_s {
     user_t *owner;
     char *original_post;
     message_list_t *message;
+    time_t timestamp;
 } thread_t;
 
 typedef struct channel_s {
