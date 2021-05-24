@@ -51,7 +51,7 @@ typedef struct team_s {
     char *title;
     uuid_t id;
     char *description;
-    user_t owner;
+    user_t *owner;
     user_list_t *users;
     channel_list_t *channels;
 } team_t;
