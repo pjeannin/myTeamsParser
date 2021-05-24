@@ -27,14 +27,14 @@ typedef struct user_s {
 } user_t;
 
 typedef struct message_s {
-    user_t sender;
+    user_t *sender;
     char *message;
 } message_t;
 
 typedef struct thread_s {
     char *title;
     uuid_t id;
-    user_t owner;
+    user_t *owner;
     char *original_post;
     message_list_t *message;
 } thread_t;

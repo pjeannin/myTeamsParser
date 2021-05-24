@@ -43,7 +43,7 @@ team_list_t *load_teams(void);
  * threads
  * @return A linked list which contain all saved threads
  */
-thread_list_t *load_thread(void);
+thread_list_t *load_thread(user_list_t *users);
 
 /**
  * @brief Must be called when initializing the server in order to load saved
