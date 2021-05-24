@@ -14,7 +14,7 @@ linked_list_t *add_node(linked_list_t *list_head, void *data)
     if (!list_head) {
         list_head = malloc(sizeof (linked_list_t));
         list_head->data = data;
-        list_head->next NULL;
+        list_head->next = NULL;
     } else {
         for (; tmp->next; tmp = tmp->next);
         tmp->next = malloc(sizeof (linked_list_t));

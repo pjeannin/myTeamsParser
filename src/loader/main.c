@@ -9,11 +9,11 @@
 
 int main()
 {
-    struct user_t *users = load_users();
+    user_list_t *users = load_users();
     printf("User :\n");
-    printf("%s\n", users->next->next->username);
-    struct thread_t *thread = load_thread();
+    printf("%s\n", ((user_t *)users->next->next->data)->username);
+    thread_list_t *thread = load_thread();
     printf("Thread :\n");
-    printf("%s\n", thread->next->title);
+    printf("%s\n", ((thread_t *)thread->next->data)->title);
     return (0);
 }
