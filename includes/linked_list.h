@@ -26,13 +26,12 @@ typedef linked_list_t private_message_list_t;
 typedef struct user_s {
     char *username;
     uuid_t id;
-    time_t timestamp;
 } user_t;
 
 typedef struct message_s {
     user_t *sender;
     char *message;
-
+    time_t timestamp;
 } message_t;
 
 typedef struct thread_s {
