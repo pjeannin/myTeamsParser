@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stddef.h>
+#include <time.h>
 #include "linked_list.h"
 
 #define USERS_FILEPATH  "savefiles/users.cache"

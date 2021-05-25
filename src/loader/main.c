@@ -31,5 +31,8 @@ int main()
     printf("%s\n", ((user_t *)((team_t *)team->data)->owner)->username);
     printf("%s\n", ((user_t *)((team_t *)team->data)->users->data)->username);
     printf("%s\n", ((channel_t *)((team_t *)team->data)->channels->data)->title);
+    printf("----- Private Messages : -----\n");
+    private_message_list_t *message = load_privatemessages(users);
+    printf("%s\n", ((message_t *)((private_message_t *)message->data)->message_list->data)->message);
     return (0);
 }
